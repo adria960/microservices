@@ -1,0 +1,15 @@
+----------------------------------------------
+spring.jpa.open-in-view is enabled by default. 
+
+Therefore, database queries may be performed during view rendering.
+
+Explicitly configure spring.jpa.open-in-view to disable this warning
+
+------------------------------------------------
+beans package - like DTO objects
+entity - real dbase entities
+
+http://localhost:8800/h2-console/
+2023-06-17 22:24:34.730  INFO [techefx-product-stock-service,,,] 13416 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-06-17 22:24:34.738  INFO [techefx-product-stock-service,,,] 13416 --- [  restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    :
+H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:b946f1d2-e1fd-427e-a480-26cd30811976'
