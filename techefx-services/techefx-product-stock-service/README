@@ -1,0 +1,47 @@
+1. Clone git from techefx repos
+2. open with IntelliJ
+3. Check Dockerfile:
+
+FROM adoptopenjdk:8-jre
+COPY target/*.jar app.jar
+ENV JAVA_OPTS=""
+EXPOSE 8800
+ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar /app.jar" ]
+
+
+Another example (playjava):
+FROM java:8
+EXPOSE 8081
+ADD target/docker-demo.jar docker-demo.jar
+ENTRYPOINT ["java", "-jar", "docker-demo.jar"]
+
+-- java:8
+-- Check COPY and ADD commands.
+
+The 1st line can be:
+
+4. Build the project from command line:
+
+    mvn clean compile package
+
+5. Build docker image and push it to Docker Desktop:
+
+ $ docker build --pull --rm -f Dockerfile -t techefx-product-stock-service:latest .
+
+ -- Dockerfile can be written within quotes
+
+!!!! In techefx-docker-compose-workspace project, there is Docker compose file - yml file: docker-compose.yml
+
+Need to run:
+1. eureka,
+2. product stock,
+3. enquiry,
+4. gateway
+
+cd to folder with docker-compose.yml file
+
+run:
+$ docker-compose up
+
+---
+prometheus, grafana, zipkin are downloaded from image docker

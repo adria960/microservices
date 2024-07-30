@@ -1,0 +1,24 @@
+prometheus.yml
+
+scrape
+evalution   every 5 sec results collected
+
+Then, create job for the services.
+scrape-interval will overwrite the upper settings
+
+What you want to monitor, put into job.
+
+  - job_name: 'Stock-service'
+    scrape_interval: 5s
+    metrics_path: '/actuator/prometheus'
+    static_configs:
+      - targets: ['techefx-product-stock-service:8800']
+Enable actuator in services (product stock) - dependancy, application.yml:
+management.endpoints.web.exposure.include="*" and
+management.endpoints.health.show-details=always
+
+      - targets: ['techefx-product-stock-service:8800'] - Docker understands that  NOT localhost, only the service name.
+
+
+
+-----

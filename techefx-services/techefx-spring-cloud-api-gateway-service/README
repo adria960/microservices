@@ -1,0 +1,69 @@
+1. Clone git from techefx repos
+2. open with IntelliJ
+3. Check Dockerfile:
+
+FROM adoptopenjdk:8-jre
+COPY target/*.jar app.jar
+ENV JAVA_OPTS=""
+EXPOSE 8900
+ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar /app.jar" ]
+
+
+Another example (playjava):
+FROM java:8
+EXPOSE 8081
+ADD target/docker-demo.jar docker-demo.jar
+ENTRYPOINT ["java", "-jar", "docker-demo.jar"]
+
+-- java:8
+-- Check COPY and ADD commands.
+
+The 1st line can be:
+
+4. Build the project from command line:
+
+    mvn clean compile package
+
+5. Build docker image and push it to Docker Desktop:
+
+ $ docker build --pull --rm -f Dockerfile -t techefx-spring-cloud-api-gateway-service:latest .
+
+ -- Dockerfile can be written within quotes
+
+ !!!! In techefx-docker-compose-workspace project, there is Docker compose file - yml file: docker-compose.yml
+
+ Need to run:
+ 1. eureka,
+ 2. product stock,
+ 3. enquiry,
+ 4. gateway
+
+3 MArch
+Updated java 1.8 to Java 11
+
+$ docker build --pull --rm -f Dockerfile -t techefx-spring-cloud-api-gateway-service:latest .
+Sending build context to Docker daemon  49.06MB
+Step 1/5 : FROM openjdk:11
+11: Pulling from library/openjdk
+Digest: sha256:99bac5bf83633e3c7399aed725c8415e7b569b54e03e4599e580fc9cdb7c21ab
+Status: Image is up to date for openjdk:11
+ ---> 47a932d998b7
+Step 2/5 : COPY target/*.jar app.jar
+ ---> 0c712837e991
+Step 3/5 : ENV JAVA_OPTS=""
+ ---> Running in 0acace49bda9
+Removing intermediate container 0acace49bda9
+ ---> 92c7b9da4f64
+Step 4/5 : EXPOSE 8900
+ ---> Running in cb790d54882b
+Removing intermediate container cb790d54882b
+ ---> b505163ad7bc
+Step 5/5 : ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar /app.jar" ]
+ ---> Running in 466641af9c12
+Removing intermediate container 466641af9c12
+ ---> b0b4d4a72add
+Successfully built b0b4d4a72add
+Successfully tagged techefx-spring-cloud-api-gateway-service:latest
+SECURITY WARNING: You are building a Docker image from Windows against a non-Windows Docker host. All files and directories added to build
+context will have '-rwxr-xr-x' permissions. It is recommended to double check and reset permissions for sensitive files and directories.
+
