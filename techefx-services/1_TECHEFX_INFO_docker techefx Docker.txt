@@ -1,0 +1,46 @@
+-------------------------
+TechEFX
+----------------------
+
+
+YOUTUBE:
+https://www.youtube.com/watch?v=FW8jr205Ap8&ab_channel=TechEFX
+
+GitHub:
+https://github.com/techefx
+
+DockerHub - browser (my laptop):
+docker0407/docker123
+
+
+1. Every service has Dockerfile 
+
+2. All done in Spring Boot
+
+3. Build image from Dockerfile - 
+
+4. Create docker-compose.yml file with all services
+   - microservices - poduct stock and enquiry, eureka and api-gateway
+   - prometheus -
+	volumes - need to have reference for the config file 
+	image from docker hub; 
+	needs config file (mandatory). There is also default file
+
+   - grafana
+	image from docker hub
+        loaded after prometheus
+
+   - zipkin
+	image from docker hub
+	environment is set to STORAGE_TYPE=mem    inMemory, could be MySQL or...dbase other
+   
+
+After compose it will create Logical volume on my machine
+
+Prometeus and Graphana run within containers configured on my machine!!!
+
+http://localhost:9090/
+http://localhost:3000/
+admin/admin
+http://localhost:3000/dashboard/new?editPanel=2&orgId=1
+

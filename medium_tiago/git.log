@@ -1,0 +1,47 @@
+Jaca@DESKTOP-G102BV9 MINGW64 /e/000000/MICROSERVICES/medium_tiago_albuquerque (master)
+
+$ git push origin master
+To https://github.com/ganna60/medium_tiago_albuquerque.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/ganna60/medium_tiago_albuquerque.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+
+
+$ git remote add origin https://github.com/ganna60/medium_tiago_albuquerque.git
+error: remote origin already exists.
+
+
+
+$ git pull origin master --allow-unrelated-histories
+From https://github.com/ganna60/medium_tiago_albuquerque
+ * branch            master     -> FETCH_HEAD
+Merge made by the 'ort' strategy.
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+
+
+
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+
+
+$ git push -f origin master
+Enumerating objects: 408, done.
+Counting objects: 100% (408/408), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (366/366), done.
+Writing objects: 100% (407/407), 153.72 KiB | 3.01 MiB/s, done.
+Total 407 (delta 256), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (256/256), done.
+To https://github.com/ganna60/medium_tiago_albuquerque.git
+   681e11c..b3a8457  master -> master
+
+
+$

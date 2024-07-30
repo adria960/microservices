@@ -1,0 +1,173 @@
+
+
+-----------------------------
+1. Clone 4 sevices from gitHub:
+-----------------------------
+$ mkdir techefx-services
+
+$ git clone https://github.com/techefx/techefx-eureka-naming-server.git
+
+$ git clone https://github.com/techefx/techefx-zuul-api-gateway-server.git
+
+$ git clone https://github.com/techefx/techefx-product-stock-service.git
+
+$ git clone https://github.com/techefx/techefx-product-enquiry-service.git
+
+Jaca@DESKTOP-G102BV9 MINGW64 /e/000 2021/techefx-services
+$ ls -l
+total 16
+drwxr-xr-x 1 Jaca 197121 0 Mar 22 03:11 techefx-eureka-naming-server/
+drwxr-xr-x 1 Jaca 197121 0 Mar 22 03:16 techefx-product-enquiry-service/
+drwxr-xr-x 1 Jaca 197121 0 Mar 22 03:14 techefx-product-stock-service/
+drwxr-xr-x 1 Jaca 197121 0 Mar 22 03:13 techefx-zuul-api-gateway-server/
+
+-----------------------------------------------------------------------------
+
+----------------------------------------------------
+2. Compile/package all 4 services with Maven from cmd:
+----------------------------------------------------
+
+$ pwd
+/e/000 2021/techefx-services/techefx-eureka-naming-server
+$ mvn clean compile package
+
+$ dir
+Dockerfile  HELP.md  mvnw  mvnw.cmd  pom.xml  src  target  techefx-eureka-naming-server.iml
+
+
+----------------------------------------------------
+3. Build docker images from Dockerfile
+----------------------------------------------------
+
+Jaca@DESKTOP-G102BV9 MINGW64 /e/000/techefx-services/techefx-eureka-naming-server (master)
+
+$ docker build --pull --rm -f Dockerfile -t techefx-eureka-naming-server:latest .
+
+Created 4 images for 4 services from 4 Dockerfile-s with docker build command
+...
+1.
+2.
+3.
+4
+...
+
+5. 
+$ git clone https://github.com/techefx/techefx-docker-compose-workspace.git
+docker-compose.yml
+ - network
+volumes for prometheus:
+	config.file is mandatory
+command:
+	ref to prometheus.yml (default value)
+	
+\techefx-docker-compose-workspace  willbe config prometheus file
+logical 
+
+6.
+$ docker pull prom/prometheus
+
+7.
+docker pull grafana/grafana
+
+8.
+docker pull openzipkin/zipkin
+
+7.
+Prometheus - it has grafana graph
+localhost:9090
+
+7.1
+localhost:3000
+Grafana directly - not from docker
+admin/admin
+Settings/Data Source=Prometheus
+
+prometheus.yml - config - usin Spring Boot actuator
+
+
+HTTP
+URL = http://localhost:9090
+Save and Test 
+Failed - cannot ping datasource
+
+NEED TO PUT - 
+URL = http://prometheus:9090
+
+from container
+
+7.2
+Dashboard
+	New Panel
+		Query
+			DAtaSource - prometheus
+					Select metrics   up
+Panel name  - System up metrics
+Apply
+...
+
+Can Import dashboard from URL or JSON file
+
+
+
+POSTMAN
+1st
+localhost:8700/product-enquiry/name/bat/availability/yes/unit/3
+{
+    "id": 1001,
+    "productName": "bat",
+    "productPrice": 5000.00,
+    "productAvailability": "yes",
+    "discountOffer": 20.0,
+    "unit": 3,
+    "totalPrice": 12000.0,
+    "port": 8800
+}
+
+2nd
+Directly:
+
+Directly - 8800
+----------------
+localhost:8800/check-product-stock/productName/ball/productAvailability/yes
+{
+    "id": 1002,
+    "productName": "ball",
+    "productPrice": 500.00,
+    "productAvailability": "yes",
+    "discountOffer": 40.0,
+    "port": 8800
+}
+
+------------------------------------------------------------------------
+3rd
+Using api-gateway: PORT: 8900
+-----------------------
+services: 
+----------------
+product-enquiry
+stock-enquiry
+
+@GetMapping("/product-enquiry/name/{name}/availability/{availability}/unit/{unit}")
+---------------------------------------------------------------------------------------
+localhost:8900
+
+localhost:8900/product-enquiry/name/bat/availability/yes/unit/3
+{
+    "id": 1001,
+    "productName": "bat",
+    "productPrice": 5000.00,
+    "productAvailability": "yes",
+    "discountOffer": 20.0,
+    "unit": 3,
+    "totalPrice": 12000.0,
+    "port": 8800
+}
+
+--------------------------------------
+Zipkin is tracing the requests - Distributing tracing (Jaeger is another tool for it)
+-----------------------------------------
+1st trace enquiry -> stock service
+2nd trace stock service
+3rd api gateway -> enguiry -> stock 
+
+TechEFX youtube video - Zipkin integration -

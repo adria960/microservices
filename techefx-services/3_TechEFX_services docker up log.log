@@ -1,0 +1,1142 @@
+
+CHANGE /e/000/techefx-services  ---->>>> /e/000 2021/techefx-services!!!
+
+
+Jaca@DESKTOP-G102BV9 MINGW64 ~
+$ cd e:
+
+Jaca@DESKTOP-G102BV9 MINGW64 /e
+$ cd 00
+bash: cd: 00: No such file or directory
+
+Jaca@DESKTOP-G102BV9 MINGW64 /e
+$ cd 000
+
+Jaca@DESKTOP-G102BV9 MINGW64 /e/000
+$ cd techefx-services/
+
+Jaca@DESKTOP-G102BV9 MINGW64 /e/000/techefx-services
+$ cd techefx-docker-compose-workspace/
+
+Jaca@DESKTOP-G102BV9 MINGW64 /e/000/techefx-services/techefx-docker-compose-workspace (master)
+$ ls -l
+total 5
+drwxr-xr-x 1 Jaca 197121    0 Mar 23 00:46  config/
+drwxr-xr-x 1 Jaca 197121    0 Mar 23 02:10  data/
+-rw-r--r-- 1 Jaca 197121 2591 Apr 20 23:12  docker-compose.yml
+drwxr-xr-x 1 Jaca 197121    0 Mar 23 00:46 'Grafana Sample Dashboard'/
+-rw-r--r-- 1 Jaca 197121  682 Apr 21 01:33  README
+
+Jaca@DESKTOP-G102BV9 MINGW64 /e/000/techefx-services/techefx-docker-compose-workspace (master)
+$ ls -lt
+total 5
+-rw-r--r-- 1 Jaca 197121  682 Apr 21 01:33  README
+-rw-r--r-- 1 Jaca 197121 2591 Apr 20 23:12  docker-compose.yml
+drwxr-xr-x 1 Jaca 197121    0 Mar 23 02:10  data/
+drwxr-xr-x 1 Jaca 197121    0 Mar 23 00:46  config/
+drwxr-xr-x 1 Jaca 197121    0 Mar 23 00:46 'Grafana Sample Dashboard'/
+
+Jaca@DESKTOP-G102BV9 MINGW64 /e/000/techefx-services/techefx-docker-compose-workspace (master)
+$ docker-compose down
+Stopping techefx-docker-compose-workspace_grafana_1                                  ...
+Stopping techefx-docker-compose-workspace_techefx-spring-cloud-api-gateway-service_1 ...
+Stopping techefx-docker-compose-workspace_prometheus_1                               ...
+Stopping techefx-docker-compose-workspace_techefx-product-enquiry-service_1          ...
+Stopping techefx-docker-compose-workspace_zipkin_1                                   ...
+Stopping techefx-docker-compose-workspace_techefx-product-stock-service_1            ...
+Stopping techefx-docker-compose-workspace_techefx-eureka-namng-service_1             ...
+Stopping techefx-docker-compose-workspace_grafana_1                                  ... done
+Stopping techefx-docker-compose-workspace_prometheus_1                               ... done
+Stopping techefx-docker-compose-workspace_zipkin_1                                   ... done
+Stopping techefx-docker-compose-workspace_techefx-spring-cloud-api-gateway-service_1 ... done
+Stopping techefx-docker-compose-workspace_techefx-product-enquiry-service_1          ... done
+Stopping techefx-docker-compose-workspace_techefx-product-stock-service_1            ... done
+Stopping techefx-docker-compose-workspace_techefx-eureka-namng-service_1             ... done
+Removing techefx-docker-compose-workspace_grafana_1                                  ...
+Removing techefx-docker-compose-workspace_techefx-spring-cloud-api-gateway-service_1 ...
+Removing techefx-docker-compose-workspace_prometheus_1                               ...
+Removing techefx-docker-compose-workspace_techefx-product-enquiry-service_1          ...
+Removing techefx-docker-compose-workspace_zipkin_1                                   ...
+Removing techefx-docker-compose-workspace_techefx-product-stock-service_1            ...
+Removing techefx-docker-compose-workspace_techefx-eureka-namng-service_1             ...
+Removing techefx-docker-compose-workspace_zipkin_1                                   ... done
+Removing techefx-docker-compose-workspace_techefx-eureka-namng-service_1             ... done
+Removing techefx-docker-compose-workspace_techefx-product-stock-service_1            ... done
+Removing techefx-docker-compose-workspace_techefx-product-enquiry-service_1          ... done
+Removing techefx-docker-compose-workspace_techefx-spring-cloud-api-gateway-service_1 ... done
+Removing techefx-docker-compose-workspace_grafana_1                                  ... done
+Removing techefx-docker-compose-workspace_prometheus_1                               ... done
+Removing network techefx-docker-compose-workspace_test-network
+
+Jaca@DESKTOP-G102BV9 MINGW64 /e/000/techefx-services/techefx-docker-compose-workspace (master)
+$ docker-compose up
+Creating network "techefx-docker-compose-workspace_test-network" with the default driver
+Creating techefx-docker-compose-workspace_techefx-eureka-namng-service_1 ...
+Creating techefx-docker-compose-workspace_techefx-eureka-namng-service_1 ... done
+Creating techefx-docker-compose-workspace_zipkin_1                       ...
+Creating techefx-docker-compose-workspace_techefx-product-stock-service_1 ...
+Creating techefx-docker-compose-workspace_zipkin_1                        ... done
+Creating techefx-docker-compose-workspace_techefx-product-stock-service_1 ... done
+Creating techefx-docker-compose-workspace_techefx-product-enquiry-service_1 ...
+Creating techefx-docker-compose-workspace_prometheus_1                      ...
+Creating techefx-docker-compose-workspace_techefx-product-enquiry-service_1 ... done
+Creating techefx-docker-compose-workspace_techefx-spring-cloud-api-gateway-service_1 ...
+Creating techefx-docker-compose-workspace_prometheus_1                               ... done
+Creating techefx-docker-compose-workspace_grafana_1                                  ...
+Creating techefx-docker-compose-workspace_techefx-spring-cloud-api-gateway-service_1 ... done
+Creating techefx-docker-compose-workspace_grafana_1                                  ... done
+Docker Compose is now in the Docker CLI, try `docker compose up`
+
+Attaching to techefx-docker-compose-workspace_techefx-eureka-namng-service_1, techefx-docker-compose-workspace_zipkin_1, techefx-docker-compose-workspace_techefx-product-stock-service_1, techefx-docker-compose-workspace_techefx-product-enquiry-service_1, techefx-docker-compose-workspace_prometheus_1, techefx-docker-compose-workspace_techefx-spring-cloud-api-gateway-service_1, techefx-docker-compose-workspace_grafana_1
+prometheus_1                                | level=warn ts=2021-04-21T00:11:42.055Z caller=main.go:355 deprecation_notice="'storage.tsdb.retention' flag is deprecated use 'storage.tsdb.retention.time' instead."
+prometheus_1                                | level=info ts=2021-04-21T00:11:42.055Z caller=main.go:404 msg="Starting Prometheus" version="(version=2.25.2, branch=HEAD, revision=bda05a23ada314a0b9806a362da39b7a1a4e04c3)"
+prometheus_1                                | level=info ts=2021-04-21T00:11:42.055Z caller=main.go:409 build_context="(go=go1.15.10, user=root@de38ec01ef10, date=20210316-18:07:52)"
+prometheus_1                                | level=info ts=2021-04-21T00:11:42.055Z caller=main.go:410 host_details="(Linux 5.4.72-microsoft-standard-WSL2 #1 SMP Wed Oct 28 23:40:43 UTC 2020 x86_64 7549494af483 localdomain)"
+prometheus_1                                | level=info ts=2021-04-21T00:11:42.055Z caller=main.go:411 fd_limits="(soft=1048576, hard=1048576)"
+prometheus_1                                | level=info ts=2021-04-21T00:11:42.056Z caller=main.go:412 vm_limits="(soft=unlimited, hard=unlimited)"
+prometheus_1                                | level=info ts=2021-04-21T00:11:42.079Z caller=web.go:532 component=web msg="Start listening for connections" address=0.0.0.0:9090
+prometheus_1                                | level=info ts=2021-04-21T00:11:42.108Z caller=main.go:779 msg="Starting TSDB ..."
+prometheus_1                                | level=info ts=2021-04-21T00:11:42.118Z caller=tls_config.go:191 component=web msg="TLS is disabled." http2=false
+prometheus_1                                | level=info ts=2021-04-21T00:11:42.151Z caller=head.go:668 component=tsdb msg="Replaying on-disk memory mappable chunks if any"
+prometheus_1                                | level=info ts=2021-04-21T00:11:42.151Z caller=head.go:682 component=tsdb msg="On-disk memory mappable chunks replay completed" duration=5.3▒s
+prometheus_1                                | level=info ts=2021-04-21T00:11:42.151Z caller=head.go:688 component=tsdb msg="Replaying WAL, this may take a while"
+prometheus_1                                | level=info ts=2021-04-21T00:11:42.152Z caller=head.go:740 component=tsdb msg="WAL segment loaded" segment=0 maxSegment=0
+prometheus_1                                | level=info ts=2021-04-21T00:11:42.153Z caller=head.go:745 component=tsdb msg="WAL replay completed" checkpoint_replay_duration=67.2▒s wal_replay_duration=1.3153ms total_replay_duration=1.4224ms
+prometheus_1                                | level=info ts=2021-04-21T00:11:42.154Z caller=main.go:799 fs_type=EXT4_SUPER_MAGIC
+prometheus_1                                | level=info ts=2021-04-21T00:11:42.154Z caller=main.go:802 msg="TSDB started"
+prometheus_1                                | level=info ts=2021-04-21T00:11:42.154Z caller=main.go:928 msg="Loading configuration file" filename=/etc/prometheus/prometheus.yml
+prometheus_1                                | level=info ts=2021-04-21T00:11:42.230Z caller=main.go:959 msg="Completed loading of configuration file" filename=/etc/prometheus/prometheus.yml totalDuration=76.6564ms remote_storage=3.1▒s web_handler=900ns query_engine=1.6▒s scrape=4.9118ms scrape_sd=414.2▒s notify=1.6▒s notify_sd=4.7▒s rules=2.6▒s
+prometheus_1                                | level=info ts=2021-04-21T00:11:42.231Z caller=main.go:751 msg="Server is ready to receive web requests."
+techefx-eureka-namng-service_1              |
+techefx-eureka-namng-service_1              |   .   ____          _            __ _ _
+techefx-eureka-namng-service_1              |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+techefx-eureka-namng-service_1              | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+techefx-eureka-namng-service_1              |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+techefx-eureka-namng-service_1              |   '  |____| .__|_| |_|_| |_\__, | / / / /
+techefx-eureka-namng-service_1              |  =========|_|==============|___/=/_/_/_/
+techefx-eureka-namng-service_1              |  :: Spring Boot ::        (v2.3.6.RELEASE)
+techefx-eureka-namng-service_1              |
+techefx-eureka-namng-service_1              | 2021-04-21 00:11:44.433  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] t.t.TechefxEurekaNamingServerApplication : No active profile set, falling back to default profiles: default
+zipkin_1                                    |
+zipkin_1                                    |                   oo
+zipkin_1                                    |                  oooo
+zipkin_1                                    |                 oooooo
+zipkin_1                                    |                oooooooo
+zipkin_1                                    |               oooooooooo
+zipkin_1                                    |              oooooooooooo
+zipkin_1                                    |            ooooooo  ooooooo
+zipkin_1                                    |           oooooo     ooooooo
+zipkin_1                                    |          oooooo       ooooooo
+zipkin_1                                    |         oooooo   o  o   oooooo
+zipkin_1                                    |        oooooo   oo  oo   oooooo
+zipkin_1                                    |      ooooooo  oooo  oooo  ooooooo
+zipkin_1                                    |     oooooo   ooooo  ooooo  ooooooo
+zipkin_1                                    |    oooooo   oooooo  oooooo  ooooooo
+zipkin_1                                    |   oooooooo      oo  oo      oooooooo
+zipkin_1                                    |   ooooooooooooo oo  oo ooooooooooooo
+zipkin_1                                    |       oooooooooooo  oooooooooooo
+zipkin_1                                    |           oooooooo  oooooooo
+zipkin_1                                    |               oooo  oooo
+zipkin_1                                    |
+zipkin_1                                    |      ________ ____  _  _____ _   _
+zipkin_1                                    |     |__  /_ _|  _ \| |/ /_ _| \ | |
+zipkin_1                                    |       / / | || |_) | ' / | ||  \| |
+zipkin_1                                    |      / /_ | ||  __/| . \ | || |\  |
+zipkin_1                                    |     |____|___|_|   |_|\_\___|_| \_|
+zipkin_1                                    |
+zipkin_1                                    | :: version 2.23.2 :: commit 7bf3aab ::
+zipkin_1                                    |
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Starting Grafana" logger=server version=7.4.5 commit=8a2c78d3f8 branch=HEAD compiled=2021-03-18T09:23:36+0000
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Config loaded from" logger=settings file=/usr/share/grafana/conf/defaults.ini
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Config loaded from" logger=settings file=/etc/grafana/grafana.ini
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.data=/var/lib/grafana"
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.logs=/var/log/grafana"
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.plugins=/var/lib/grafana/plugins"
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.paths.provisioning=/etc/grafana/provisioning"
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Config overridden from command line" logger=settings arg="default.log.mode=console"
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_DATA=/var/lib/grafana"
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_LOGS=/var/log/grafana"
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_PLUGINS=/var/lib/grafana/plugins"
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Config overridden from Environment variable" logger=settings var="GF_PATHS_PROVISIONING=/etc/grafana/provisioning"
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Path Home" logger=settings path=/usr/share/grafana
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Path Data" logger=settings path=/var/lib/grafana
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Path Logs" logger=settings path=/var/log/grafana
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Path Plugins" logger=settings path=/var/lib/grafana/plugins
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Path Provisioning" logger=settings path=/etc/grafana/provisioning
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="App mode production" logger=settings
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Connecting to DB" logger=sqlstore dbtype=sqlite3
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Creating SQLite database file" logger=sqlstore path=/var/lib/grafana/grafana.db
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Starting DB migrations" logger=migrator
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Executing migration" logger=migrator id="create migration_log table"
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Executing migration" logger=migrator id="create user table"
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Executing migration" logger=migrator id="add unique index user.login"
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Executing migration" logger=migrator id="add unique index user.email"
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Executing migration" logger=migrator id="drop index UQE_user_login - v1"
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Executing migration" logger=migrator id="drop index UQE_user_email - v1"
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Executing migration" logger=migrator id="Rename table user to user_v1 - v1"
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Executing migration" logger=migrator id="create user table v2"
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Executing migration" logger=migrator id="create index UQE_user_login - v2"
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Executing migration" logger=migrator id="create index UQE_user_email - v2"
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Executing migration" logger=migrator id="copy data_source v1 to v2"
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Executing migration" logger=migrator id="Drop old table user_v1"
+grafana_1                                   | t=2021-04-21T00:11:45+0000 lvl=info msg="Executing migration" logger=migrator id="Add column help_flags1 to user table"
+grafana_1                                   | t=2021-04-21T00:11:46+0000 lvl=info msg="Executing migration" logger=migrator id="Update user table charset"
+grafana_1                                   | t=2021-04-21T00:11:46+0000 lvl=info msg="Executing migration" logger=migrator id="Add last_seen_at column to user"
+grafana_1                                   | t=2021-04-21T00:11:46+0000 lvl=info msg="Executing migration" logger=migrator id="Add missing user data"
+grafana_1                                   | t=2021-04-21T00:11:46+0000 lvl=info msg="Executing migration" logger=migrator id="Add is_disabled column to user"
+grafana_1                                   | t=2021-04-21T00:11:46+0000 lvl=info msg="Executing migration" logger=migrator id="Add index user.login/user.email"
+grafana_1                                   | t=2021-04-21T00:11:46+0000 lvl=info msg="Executing migration" logger=migrator id="create temp user table v1-7"
+grafana_1                                   | t=2021-04-21T00:11:46+0000 lvl=info msg="Executing migration" logger=migrator id="create index IDX_temp_user_email - v1-7"
+grafana_1                                   | t=2021-04-21T00:11:46+0000 lvl=info msg="Executing migration" logger=migrator id="create index IDX_temp_user_org_id - v1-7"
+grafana_1                                   | t=2021-04-21T00:11:46+0000 lvl=info msg="Executing migration" logger=migrator id="create index IDX_temp_user_code - v1-7"
+grafana_1                                   | t=2021-04-21T00:11:46+0000 lvl=info msg="Executing migration" logger=migrator id="create index IDX_temp_user_status - v1-7"
+grafana_1                                   | t=2021-04-21T00:11:46+0000 lvl=info msg="Executing migration" logger=migrator id="Update temp_user table charset"
+grafana_1                                   | t=2021-04-21T00:11:46+0000 lvl=info msg="Executing migration" logger=migrator id="drop index IDX_temp_user_email - v1"
+grafana_1                                   | t=2021-04-21T00:11:46+0000 lvl=info msg="Executing migration" logger=migrator id="drop index IDX_temp_user_org_id - v1"
+grafana_1                                   | t=2021-04-21T00:11:46+0000 lvl=info msg="Executing migration" logger=migrator id="drop index IDX_temp_user_code - v1"
+grafana_1                                   | t=2021-04-21T00:11:46+0000 lvl=info msg="Executing migration" logger=migrator id="drop index IDX_temp_user_status - v1"
+grafana_1                                   | t=2021-04-21T00:11:46+0000 lvl=info msg="Executing migration" logger=migrator id="Rename table temp_user to temp_user_tmp_qwerty - v1"
+grafana_1                                   | t=2021-04-21T00:11:46+0000 lvl=info msg="Executing migration" logger=migrator id="create temp_user v2"
+grafana_1                                   | t=2021-04-21T00:11:46+0000 lvl=info msg="Executing migration" logger=migrator id="create index IDX_temp_user_email - v2"
+grafana_1                                   | t=2021-04-21T00:11:46+0000 lvl=info msg="Executing migration" logger=migrator id="create index IDX_temp_user_org_id - v2"
+grafana_1                                   | t=2021-04-21T00:11:46+0000 lvl=info msg="Executing migration" logger=migrator id="create index IDX_temp_user_code - v2"
+grafana_1                                   | t=2021-04-21T00:11:46+0000 lvl=info msg="Executing migration" logger=migrator id="create index IDX_temp_user_status - v2"
+grafana_1                                   | t=2021-04-21T00:11:46+0000 lvl=info msg="Executing migration" logger=migrator id="copy temp_user v1 to v2"
+grafana_1                                   | t=2021-04-21T00:11:46+0000 lvl=info msg="Executing migration" logger=migrator id="drop temp_user_tmp_qwerty"
+grafana_1                                   | t=2021-04-21T00:11:46+0000 lvl=info msg="Executing migration" logger=migrator id="Set created for temp users that will otherwise prematurely expire"
+grafana_1                                   | t=2021-04-21T00:11:47+0000 lvl=info msg="Executing migration" logger=migrator id="create star table"
+grafana_1                                   | t=2021-04-21T00:11:47+0000 lvl=info msg="Executing migration" logger=migrator id="add unique index star.user_id_dashboard_id"
+grafana_1                                   | t=2021-04-21T00:11:47+0000 lvl=info msg="Executing migration" logger=migrator id="create org table v1"
+grafana_1                                   | t=2021-04-21T00:11:47+0000 lvl=info msg="Executing migration" logger=migrator id="create index UQE_org_name - v1"
+grafana_1                                   | t=2021-04-21T00:11:47+0000 lvl=info msg="Executing migration" logger=migrator id="create org_user table v1"
+grafana_1                                   | t=2021-04-21T00:11:47+0000 lvl=info msg="Executing migration" logger=migrator id="create index IDX_org_user_org_id - v1"
+grafana_1                                   | t=2021-04-21T00:11:47+0000 lvl=info msg="Executing migration" logger=migrator id="create index UQE_org_user_org_id_user_id - v1"
+grafana_1                                   | t=2021-04-21T00:11:47+0000 lvl=info msg="Executing migration" logger=migrator id="Update org table charset"
+grafana_1                                   | t=2021-04-21T00:11:47+0000 lvl=info msg="Executing migration" logger=migrator id="Update org_user table charset"
+grafana_1                                   | t=2021-04-21T00:11:47+0000 lvl=info msg="Executing migration" logger=migrator id="Migrate all Read Only Viewers to Viewers"
+grafana_1                                   | t=2021-04-21T00:11:47+0000 lvl=info msg="Executing migration" logger=migrator id="create dashboard table"
+grafana_1                                   | t=2021-04-21T00:11:47+0000 lvl=info msg="Executing migration" logger=migrator id="add index dashboard.account_id"
+grafana_1                                   | t=2021-04-21T00:11:47+0000 lvl=info msg="Executing migration" logger=migrator id="add unique index dashboard_account_id_slug"
+grafana_1                                   | t=2021-04-21T00:11:47+0000 lvl=info msg="Executing migration" logger=migrator id="create dashboard_tag table"
+grafana_1                                   | t=2021-04-21T00:11:47+0000 lvl=info msg="Executing migration" logger=migrator id="add unique index dashboard_tag.dasboard_id_term"
+grafana_1                                   | t=2021-04-21T00:11:47+0000 lvl=info msg="Executing migration" logger=migrator id="drop index UQE_dashboard_tag_dashboard_id_term - v1"
+grafana_1                                   | t=2021-04-21T00:11:48+0000 lvl=info msg="Executing migration" logger=migrator id="Rename table dashboard to dashboard_v1 - v1"
+grafana_1                                   | t=2021-04-21T00:11:48+0000 lvl=info msg="Executing migration" logger=migrator id="create dashboard v2"
+grafana_1                                   | t=2021-04-21T00:11:48+0000 lvl=info msg="Executing migration" logger=migrator id="create index IDX_dashboard_org_id - v2"
+grafana_1                                   | t=2021-04-21T00:11:48+0000 lvl=info msg="Executing migration" logger=migrator id="create index UQE_dashboard_org_id_slug - v2"
+grafana_1                                   | t=2021-04-21T00:11:48+0000 lvl=info msg="Executing migration" logger=migrator id="copy dashboard v1 to v2"
+grafana_1                                   | t=2021-04-21T00:11:48+0000 lvl=info msg="Executing migration" logger=migrator id="drop table dashboard_v1"
+grafana_1                                   | t=2021-04-21T00:11:48+0000 lvl=info msg="Executing migration" logger=migrator id="alter dashboard.data to mediumtext v1"
+grafana_1                                   | t=2021-04-21T00:11:48+0000 lvl=info msg="Executing migration" logger=migrator id="Add column updated_by in dashboard - v2"
+grafana_1                                   | t=2021-04-21T00:11:48+0000 lvl=info msg="Executing migration" logger=migrator id="Add column created_by in dashboard - v2"
+grafana_1                                   | t=2021-04-21T00:11:49+0000 lvl=info msg="Executing migration" logger=migrator id="Add column gnetId in dashboard"
+techefx-product-stock-service_1             |
+techefx-product-stock-service_1             |   .   ____          _            __ _ _
+techefx-product-stock-service_1             |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+techefx-product-stock-service_1             | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+techefx-product-stock-service_1             |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+techefx-product-stock-service_1             |   '  |____| .__|_| |_|_| |_\__, | / / / /
+techefx-product-stock-service_1             |  =========|_|==============|___/=/_/_/_/
+techefx-product-stock-service_1             |  :: Spring Boot ::        (v2.3.6.RELEASE)
+techefx-product-stock-service_1             |
+grafana_1                                   | t=2021-04-21T00:11:49+0000 lvl=info msg="Executing migration" logger=migrator id="Add index for gnetId in dashboard"
+techefx-product-stock-service_1             | 2021-04-21 00:11:49.100  INFO [techefx-product-stock-service,,,] 7 --- [           main] .t.TechefxProductStockServiceApplication : No active profile set, falling back to default profiles: default
+grafana_1                                   | t=2021-04-21T00:11:49+0000 lvl=info msg="Executing migration" logger=migrator id="Add column plugin_id in dashboard"
+grafana_1                                   | t=2021-04-21T00:11:49+0000 lvl=info msg="Executing migration" logger=migrator id="Add index for plugin_id in dashboard"
+grafana_1                                   | t=2021-04-21T00:11:49+0000 lvl=info msg="Executing migration" logger=migrator id="Add index for dashboard_id in dashboard_tag"
+grafana_1                                   | t=2021-04-21T00:11:49+0000 lvl=info msg="Executing migration" logger=migrator id="Update dashboard table charset"
+grafana_1                                   | t=2021-04-21T00:11:49+0000 lvl=info msg="Executing migration" logger=migrator id="Update dashboard_tag table charset"
+grafana_1                                   | t=2021-04-21T00:11:49+0000 lvl=info msg="Executing migration" logger=migrator id="Add column folder_id in dashboard"
+grafana_1                                   | t=2021-04-21T00:11:49+0000 lvl=info msg="Executing migration" logger=migrator id="Add column isFolder in dashboard"
+grafana_1                                   | t=2021-04-21T00:11:49+0000 lvl=info msg="Executing migration" logger=migrator id="Add column has_acl in dashboard"
+grafana_1                                   | t=2021-04-21T00:11:49+0000 lvl=info msg="Executing migration" logger=migrator id="Add column uid in dashboard"
+grafana_1                                   | t=2021-04-21T00:11:49+0000 lvl=info msg="Executing migration" logger=migrator id="Update uid column values in dashboard"
+grafana_1                                   | t=2021-04-21T00:11:49+0000 lvl=info msg="Executing migration" logger=migrator id="Add unique index dashboard_org_id_uid"
+grafana_1                                   | t=2021-04-21T00:11:49+0000 lvl=info msg="Executing migration" logger=migrator id="Remove unique index org_id_slug"
+grafana_1                                   | t=2021-04-21T00:11:49+0000 lvl=info msg="Executing migration" logger=migrator id="Update dashboard title length"
+grafana_1                                   | t=2021-04-21T00:11:49+0000 lvl=info msg="Executing migration" logger=migrator id="Add unique index for dashboard_org_id_title_folder_id"
+grafana_1                                   | t=2021-04-21T00:11:49+0000 lvl=info msg="Executing migration" logger=migrator id="create dashboard_provisioning"
+grafana_1                                   | t=2021-04-21T00:11:49+0000 lvl=info msg="Executing migration" logger=migrator id="Rename table dashboard_provisioning to dashboard_provisioning_tmp_qwerty - v1"
+grafana_1                                   | t=2021-04-21T00:11:49+0000 lvl=info msg="Executing migration" logger=migrator id="create dashboard_provisioning v2"
+grafana_1                                   | t=2021-04-21T00:11:49+0000 lvl=info msg="Executing migration" logger=migrator id="create index IDX_dashboard_provisioning_dashboard_id - v2"
+grafana_1                                   | t=2021-04-21T00:11:49+0000 lvl=info msg="Executing migration" logger=migrator id="create index IDX_dashboard_provisioning_dashboard_id_name - v2"
+grafana_1                                   | t=2021-04-21T00:11:50+0000 lvl=info msg="Executing migration" logger=migrator id="copy dashboard_provisioning v1 to v2"
+grafana_1                                   | t=2021-04-21T00:11:50+0000 lvl=info msg="Executing migration" logger=migrator id="drop dashboard_provisioning_tmp_qwerty"
+grafana_1                                   | t=2021-04-21T00:11:50+0000 lvl=info msg="Executing migration" logger=migrator id="Add check_sum column"
+grafana_1                                   | t=2021-04-21T00:11:50+0000 lvl=info msg="Executing migration" logger=migrator id="Add index for dashboard_title"
+grafana_1                                   | t=2021-04-21T00:11:50+0000 lvl=info msg="Executing migration" logger=migrator id="delete tags for deleted dashboards"
+grafana_1                                   | t=2021-04-21T00:11:50+0000 lvl=info msg="Executing migration" logger=migrator id="delete stars for deleted dashboards"
+grafana_1                                   | t=2021-04-21T00:11:50+0000 lvl=info msg="Executing migration" logger=migrator id="create data_source table"
+grafana_1                                   | t=2021-04-21T00:11:50+0000 lvl=info msg="Executing migration" logger=migrator id="add index data_source.account_id"
+grafana_1                                   | t=2021-04-21T00:11:50+0000 lvl=info msg="Executing migration" logger=migrator id="add unique index data_source.account_id_name"
+grafana_1                                   | t=2021-04-21T00:11:50+0000 lvl=info msg="Executing migration" logger=migrator id="drop index IDX_data_source_account_id - v1"
+grafana_1                                   | t=2021-04-21T00:11:50+0000 lvl=info msg="Executing migration" logger=migrator id="drop index UQE_data_source_account_id_name - v1"
+grafana_1                                   | t=2021-04-21T00:11:50+0000 lvl=info msg="Executing migration" logger=migrator id="Rename table data_source to data_source_v1 - v1"
+grafana_1                                   | t=2021-04-21T00:11:50+0000 lvl=info msg="Executing migration" logger=migrator id="create data_source table v2"
+grafana_1                                   | t=2021-04-21T00:11:50+0000 lvl=info msg="Executing migration" logger=migrator id="create index IDX_data_source_org_id - v2"
+grafana_1                                   | t=2021-04-21T00:11:50+0000 lvl=info msg="Executing migration" logger=migrator id="create index UQE_data_source_org_id_name - v2"
+grafana_1                                   | t=2021-04-21T00:11:50+0000 lvl=info msg="Executing migration" logger=migrator id="copy data_source v1 to v2"
+grafana_1                                   | t=2021-04-21T00:11:50+0000 lvl=info msg="Executing migration" logger=migrator id="Drop old table data_source_v1 #2"
+grafana_1                                   | t=2021-04-21T00:11:50+0000 lvl=info msg="Executing migration" logger=migrator id="Add column with_credentials"
+grafana_1                                   | t=2021-04-21T00:11:50+0000 lvl=info msg="Executing migration" logger=migrator id="Add secure json data column"
+grafana_1                                   | t=2021-04-21T00:11:51+0000 lvl=info msg="Executing migration" logger=migrator id="Update data_source table charset"
+grafana_1                                   | t=2021-04-21T00:11:51+0000 lvl=info msg="Executing migration" logger=migrator id="Update initial version to 1"
+grafana_1                                   | t=2021-04-21T00:11:51+0000 lvl=info msg="Executing migration" logger=migrator id="Add read_only data column"
+grafana_1                                   | t=2021-04-21T00:11:51+0000 lvl=info msg="Executing migration" logger=migrator id="Migrate logging ds to loki ds"
+grafana_1                                   | t=2021-04-21T00:11:51+0000 lvl=info msg="Executing migration" logger=migrator id="Update json_data with nulls"
+grafana_1                                   | t=2021-04-21T00:11:51+0000 lvl=info msg="Executing migration" logger=migrator id="Add uid column"
+grafana_1                                   | t=2021-04-21T00:11:51+0000 lvl=info msg="Executing migration" logger=migrator id="Update uid value"
+grafana_1                                   | t=2021-04-21T00:11:51+0000 lvl=info msg="Executing migration" logger=migrator id="Add unique index datasource_org_id_uid"
+grafana_1                                   | t=2021-04-21T00:11:51+0000 lvl=info msg="Executing migration" logger=migrator id="add unique index datasource_org_id_is_default"
+grafana_1                                   | t=2021-04-21T00:11:51+0000 lvl=info msg="Executing migration" logger=migrator id="create api_key table"
+grafana_1                                   | t=2021-04-21T00:11:51+0000 lvl=info msg="Executing migration" logger=migrator id="add index api_key.account_id"
+grafana_1                                   | t=2021-04-21T00:11:51+0000 lvl=info msg="Executing migration" logger=migrator id="add index api_key.key"
+grafana_1                                   | t=2021-04-21T00:11:51+0000 lvl=info msg="Executing migration" logger=migrator id="add index api_key.account_id_name"
+grafana_1                                   | t=2021-04-21T00:11:51+0000 lvl=info msg="Executing migration" logger=migrator id="drop index IDX_api_key_account_id - v1"
+grafana_1                                   | t=2021-04-21T00:11:51+0000 lvl=info msg="Executing migration" logger=migrator id="drop index UQE_api_key_key - v1"
+techefx-product-enquiry-service_1           |
+techefx-product-enquiry-service_1           |   .   ____          _            __ _ _
+techefx-product-enquiry-service_1           |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+techefx-product-enquiry-service_1           | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+techefx-product-enquiry-service_1           |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+techefx-product-enquiry-service_1           |   '  |____| .__|_| |_|_| |_\__, | / / / /
+techefx-product-enquiry-service_1           |  =========|_|==============|___/=/_/_/_/
+techefx-product-enquiry-service_1           |  :: Spring Boot ::        (v2.3.6.RELEASE)
+techefx-product-enquiry-service_1           |
+grafana_1                                   | t=2021-04-21T00:11:51+0000 lvl=info msg="Executing migration" logger=migrator id="drop index UQE_api_key_account_id_name - v1"
+grafana_1                                   | t=2021-04-21T00:11:51+0000 lvl=info msg="Executing migration" logger=migrator id="Rename table api_key to api_key_v1 - v1"
+techefx-product-enquiry-service_1           | 2021-04-21 00:11:51.960  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] .TechefxProductEnquiryServiceApplication : No active profile set, falling back to default profiles: default
+grafana_1                                   | t=2021-04-21T00:11:52+0000 lvl=info msg="Executing migration" logger=migrator id="create api_key table v2"
+techefx-eureka-namng-service_1              | 2021-04-21 00:11:52.125  WARN [techefx-eureka-naming-server,,,] 8 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+grafana_1                                   | t=2021-04-21T00:11:52+0000 lvl=info msg="Executing migration" logger=migrator id="create index IDX_api_key_org_id - v2"
+grafana_1                                   | t=2021-04-21T00:11:52+0000 lvl=info msg="Executing migration" logger=migrator id="create index UQE_api_key_key - v2"
+grafana_1                                   | t=2021-04-21T00:11:52+0000 lvl=info msg="Executing migration" logger=migrator id="create index UQE_api_key_org_id_name - v2"
+grafana_1                                   | t=2021-04-21T00:11:52+0000 lvl=info msg="Executing migration" logger=migrator id="copy api_key v1 to v2"
+grafana_1                                   | t=2021-04-21T00:11:52+0000 lvl=info msg="Executing migration" logger=migrator id="Drop old table api_key_v1"
+grafana_1                                   | t=2021-04-21T00:11:52+0000 lvl=info msg="Executing migration" logger=migrator id="Update api_key table charset"
+grafana_1                                   | t=2021-04-21T00:11:52+0000 lvl=info msg="Executing migration" logger=migrator id="Add expires to api_key table"
+grafana_1                                   | t=2021-04-21T00:11:52+0000 lvl=info msg="Executing migration" logger=migrator id="create dashboard_snapshot table v4"
+grafana_1                                   | t=2021-04-21T00:11:52+0000 lvl=info msg="Executing migration" logger=migrator id="drop table dashboard_snapshot_v4 #1"
+grafana_1                                   | t=2021-04-21T00:11:52+0000 lvl=info msg="Executing migration" logger=migrator id="create dashboard_snapshot table v5 #2"
+grafana_1                                   | t=2021-04-21T00:11:52+0000 lvl=info msg="Executing migration" logger=migrator id="create index UQE_dashboard_snapshot_key - v5"
+grafana_1                                   | t=2021-04-21T00:11:52+0000 lvl=info msg="Executing migration" logger=migrator id="create index UQE_dashboard_snapshot_delete_key - v5"
+grafana_1                                   | t=2021-04-21T00:11:52+0000 lvl=info msg="Executing migration" logger=migrator id="create index IDX_dashboard_snapshot_user_id - v5"
+grafana_1                                   | t=2021-04-21T00:11:52+0000 lvl=info msg="Executing migration" logger=migrator id="alter dashboard_snapshot to mediumtext v2"
+grafana_1                                   | t=2021-04-21T00:11:52+0000 lvl=info msg="Executing migration" logger=migrator id="Update dashboard_snapshot table charset"
+grafana_1                                   | t=2021-04-21T00:11:52+0000 lvl=info msg="Executing migration" logger=migrator id="Add column external_delete_url to dashboard_snapshots table"
+grafana_1                                   | t=2021-04-21T00:11:52+0000 lvl=info msg="Executing migration" logger=migrator id="Add encrypted dashboard json column"
+grafana_1                                   | t=2021-04-21T00:11:53+0000 lvl=info msg="Executing migration" logger=migrator id="Change dashboard_encrypted column to MEDIUMBLOB"
+grafana_1                                   | t=2021-04-21T00:11:53+0000 lvl=info msg="Executing migration" logger=migrator id="create quota table v1"
+grafana_1                                   | t=2021-04-21T00:11:53+0000 lvl=info msg="Executing migration" logger=migrator id="create index UQE_quota_org_id_user_id_target - v1"
+grafana_1                                   | t=2021-04-21T00:11:53+0000 lvl=info msg="Executing migration" logger=migrator id="Update quota table charset"
+grafana_1                                   | t=2021-04-21T00:11:53+0000 lvl=info msg="Executing migration" logger=migrator id="create plugin_setting table"
+grafana_1                                   | t=2021-04-21T00:11:53+0000 lvl=info msg="Executing migration" logger=migrator id="create index UQE_plugin_setting_org_id_plugin_id - v1"
+grafana_1                                   | t=2021-04-21T00:11:53+0000 lvl=info msg="Executing migration" logger=migrator id="Add column plugin_version to plugin_settings"
+grafana_1                                   | t=2021-04-21T00:11:53+0000 lvl=info msg="Executing migration" logger=migrator id="Update plugin_setting table charset"
+grafana_1                                   | t=2021-04-21T00:11:53+0000 lvl=info msg="Executing migration" logger=migrator id="create session table"
+grafana_1                                   | t=2021-04-21T00:11:53+0000 lvl=info msg="Executing migration" logger=migrator id="Drop old table playlist table"
+grafana_1                                   | t=2021-04-21T00:11:53+0000 lvl=info msg="Executing migration" logger=migrator id="Drop old table playlist_item table"
+grafana_1                                   | t=2021-04-21T00:11:53+0000 lvl=info msg="Executing migration" logger=migrator id="create playlist table v2"
+grafana_1                                   | t=2021-04-21T00:11:53+0000 lvl=info msg="Executing migration" logger=migrator id="create playlist item table v2"
+zipkin_1                                    | 2021-04-21 00:11:53.446  INFO [/] 1 --- [oss-http-*:9411] c.l.a.s.Server                           : Serving HTTP at /0.0.0.0:9411 - http://127.0.0.1:9411/
+grafana_1                                   | t=2021-04-21T00:11:53+0000 lvl=info msg="Executing migration" logger=migrator id="Update playlist table charset"
+grafana_1                                   | t=2021-04-21T00:11:53+0000 lvl=info msg="Executing migration" logger=migrator id="Update playlist_item table charset"
+grafana_1                                   | t=2021-04-21T00:11:53+0000 lvl=info msg="Executing migration" logger=migrator id="drop preferences table v2"
+techefx-eureka-namng-service_1              | 2021-04-21 00:11:53.582  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fd567008-a34d-30a0-b552-d38da822bd08
+grafana_1                                   | t=2021-04-21T00:11:53+0000 lvl=info msg="Executing migration" logger=migrator id="drop preferences table v3"
+grafana_1                                   | t=2021-04-21T00:11:53+0000 lvl=info msg="Executing migration" logger=migrator id="create preferences table v3"
+grafana_1                                   | t=2021-04-21T00:11:53+0000 lvl=info msg="Executing migration" logger=migrator id="Update preferences table charset"
+grafana_1                                   | t=2021-04-21T00:11:53+0000 lvl=info msg="Executing migration" logger=migrator id="Add column team_id in preferences"
+grafana_1                                   | t=2021-04-21T00:11:53+0000 lvl=info msg="Executing migration" logger=migrator id="Update team_id column values in preferences"
+grafana_1                                   | t=2021-04-21T00:11:53+0000 lvl=info msg="Executing migration" logger=migrator id="create alert table v1"
+grafana_1                                   | t=2021-04-21T00:11:53+0000 lvl=info msg="Executing migration" logger=migrator id="add index alert org_id & id "
+grafana_1                                   | t=2021-04-21T00:11:53+0000 lvl=info msg="Executing migration" logger=migrator id="add index alert state"
+grafana_1                                   | t=2021-04-21T00:11:53+0000 lvl=info msg="Executing migration" logger=migrator id="add index alert dashboard_id"
+grafana_1                                   | t=2021-04-21T00:11:54+0000 lvl=info msg="Executing migration" logger=migrator id="Create alert_rule_tag table v1"
+grafana_1                                   | t=2021-04-21T00:11:54+0000 lvl=info msg="Executing migration" logger=migrator id="Add unique index alert_rule_tag.alert_id_tag_id"
+grafana_1                                   | t=2021-04-21T00:11:54+0000 lvl=info msg="Executing migration" logger=migrator id="drop index UQE_alert_rule_tag_alert_id_tag_id - v1"
+grafana_1                                   | t=2021-04-21T00:11:54+0000 lvl=info msg="Executing migration" logger=migrator id="Rename table alert_rule_tag to alert_rule_tag_v1 - v1"
+grafana_1                                   | t=2021-04-21T00:11:54+0000 lvl=info msg="Executing migration" logger=migrator id="Create alert_rule_tag table v2"
+grafana_1                                   | t=2021-04-21T00:11:54+0000 lvl=info msg="Executing migration" logger=migrator id="create index UQE_alert_rule_tag_alert_id_tag_id - Add unique index alert_rule_tag.alert_id_tag_id V2"
+grafana_1                                   | t=2021-04-21T00:11:54+0000 lvl=info msg="Executing migration" logger=migrator id="copy alert_rule_tag v1 to v2"
+grafana_1                                   | t=2021-04-21T00:11:54+0000 lvl=info msg="Executing migration" logger=migrator id="drop table alert_rule_tag_v1"
+grafana_1                                   | t=2021-04-21T00:11:54+0000 lvl=info msg="Executing migration" logger=migrator id="create alert_notification table v1"
+grafana_1                                   | t=2021-04-21T00:11:54+0000 lvl=info msg="Executing migration" logger=migrator id="Add column is_default"
+grafana_1                                   | t=2021-04-21T00:11:54+0000 lvl=info msg="Executing migration" logger=migrator id="Add column frequency"
+grafana_1                                   | t=2021-04-21T00:11:54+0000 lvl=info msg="Executing migration" logger=migrator id="Add column send_reminder"
+grafana_1                                   | t=2021-04-21T00:11:54+0000 lvl=info msg="Executing migration" logger=migrator id="Add column disable_resolve_message"
+grafana_1                                   | t=2021-04-21T00:11:54+0000 lvl=info msg="Executing migration" logger=migrator id="add index alert_notification org_id & name"
+grafana_1                                   | t=2021-04-21T00:11:54+0000 lvl=info msg="Executing migration" logger=migrator id="Update alert table charset"
+grafana_1                                   | t=2021-04-21T00:11:54+0000 lvl=info msg="Executing migration" logger=migrator id="Update alert_notification table charset"
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="create notification_journal table v1"
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="add index notification_journal org_id & alert_id & notifier_id"
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="drop alert_notification_journal"
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="create alert_notification_state table v1"
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="add index alert_notification_state org_id & alert_id & notifier_id"
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="Add for to alert table"
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="Add column uid in alert_notification"
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="Update uid column values in alert_notification"
+techefx-spring-cloud-api-gateway-service_1  |
+techefx-spring-cloud-api-gateway-service_1  |   .   ____          _            __ _ _
+techefx-spring-cloud-api-gateway-service_1  |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+techefx-spring-cloud-api-gateway-service_1  | ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+techefx-spring-cloud-api-gateway-service_1  |  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+techefx-spring-cloud-api-gateway-service_1  |   '  |____| .__|_| |_|_| |_\__, | / / / /
+techefx-spring-cloud-api-gateway-service_1  |  =========|_|==============|___/=/_/_/_/
+techefx-spring-cloud-api-gateway-service_1  |  :: Spring Boot ::        (v2.3.6.RELEASE)
+techefx-spring-cloud-api-gateway-service_1  |
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="Add unique index alert_notification_org_id_uid"
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:11:55.421  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] xSpringCloudApiGatewayServiceApplication : No active profile set, falling back to default profiles: default
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="Remove unique index org_id_name"
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="Add column secure_settings in alert_notification"
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="alter alert.settings to mediumtext"
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="Add non-unique index alert_notification_state_alert_id"
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="Add non-unique index alert_rule_tag_alert_id"
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="Drop old annotation table v4"
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="create annotation table v5"
+techefx-product-stock-service_1             | 2021-04-21 00:11:55.636  INFO [techefx-product-stock-service,,,] 7 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="add index annotation 0 v3"
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="add index annotation 1 v3"
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="add index annotation 2 v3"
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="add index annotation 3 v3"
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="add index annotation 4 v3"
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="Update annotation table charset"
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="Add column region_id to annotation table"
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="Drop category_id index"
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="Add column tags to annotation table"
+grafana_1                                   | t=2021-04-21T00:11:55+0000 lvl=info msg="Executing migration" logger=migrator id="Create annotation_tag table v2"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="Add unique index annotation_tag.annotation_id_tag_id"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="drop index UQE_annotation_tag_annotation_id_tag_id - v2"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="Rename table annotation_tag to annotation_tag_v2 - v2"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="Create annotation_tag table v3"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="create index UQE_annotation_tag_annotation_id_tag_id - Add unique index annotation_tag.annotation_id_tag_id V3"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="copy annotation_tag v2 to v3"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="drop table annotation_tag_v2"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="Update alert annotations and set TEXT to empty"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="Add created time to annotation table"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="Add updated time to annotation table"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="Add index for created in annotation table"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="Add index for updated in annotation table"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="Convert existing annotations from seconds to milliseconds"
+techefx-product-stock-service_1             | 2021-04-21 00:11:56.572  INFO [techefx-product-stock-service,,,] 7 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 871ms. Found 1 JPA repository interfaces.
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="Add epoch_end column"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="Add index for epoch_end"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="Make epoch_end the same as epoch"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="Move region to single row"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="Remove index org_id_epoch from annotation table"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="Remove index org_id_dashboard_id_panel_id_epoch from annotation table"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="Add index for org_id_dashboard_id_epoch_end_epoch on annotation table"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="Add index for org_id_epoch_end_epoch on annotation table"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="Remove index org_id_epoch_epoch_end from annotation table"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="Add index for alert_id on annotation table"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="create test_data table"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="create dashboard_version table v1"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="add index dashboard_version.dashboard_id"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="add unique index dashboard_version.dashboard_id and dashboard_version.version"
+grafana_1                                   | t=2021-04-21T00:11:56+0000 lvl=info msg="Executing migration" logger=migrator id="Set dashboard version to 1 where 0"
+grafana_1                                   | t=2021-04-21T00:11:57+0000 lvl=info msg="Executing migration" logger=migrator id="save existing dashboard data in dashboard_version table v1"
+techefx-product-stock-service_1             | 2021-04-21 00:11:57.050  WARN [techefx-product-stock-service,,,] 7 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+grafana_1                                   | t=2021-04-21T00:11:57+0000 lvl=info msg="Executing migration" logger=migrator id="alter dashboard_version.data to mediumtext v1"
+grafana_1                                   | t=2021-04-21T00:11:57+0000 lvl=info msg="Executing migration" logger=migrator id="create team table"
+grafana_1                                   | t=2021-04-21T00:11:57+0000 lvl=info msg="Executing migration" logger=migrator id="add index team.org_id"
+grafana_1                                   | t=2021-04-21T00:11:57+0000 lvl=info msg="Executing migration" logger=migrator id="add unique index team_org_id_name"
+grafana_1                                   | t=2021-04-21T00:11:57+0000 lvl=info msg="Executing migration" logger=migrator id="create team member table"
+grafana_1                                   | t=2021-04-21T00:11:57+0000 lvl=info msg="Executing migration" logger=migrator id="add index team_member.org_id"
+grafana_1                                   | t=2021-04-21T00:11:57+0000 lvl=info msg="Executing migration" logger=migrator id="add unique index team_member_org_id_team_id_user_id"
+grafana_1                                   | t=2021-04-21T00:11:57+0000 lvl=info msg="Executing migration" logger=migrator id="add index team_member.team_id"
+grafana_1                                   | t=2021-04-21T00:11:57+0000 lvl=info msg="Executing migration" logger=migrator id="Add column email to team table"
+grafana_1                                   | t=2021-04-21T00:11:57+0000 lvl=info msg="Executing migration" logger=migrator id="Add column external to team_member table"
+grafana_1                                   | t=2021-04-21T00:11:57+0000 lvl=info msg="Executing migration" logger=migrator id="Add column permission to team_member table"
+grafana_1                                   | t=2021-04-21T00:11:57+0000 lvl=info msg="Executing migration" logger=migrator id="create dashboard acl table"
+grafana_1                                   | t=2021-04-21T00:11:57+0000 lvl=info msg="Executing migration" logger=migrator id="add index dashboard_acl_dashboard_id"
+grafana_1                                   | t=2021-04-21T00:11:57+0000 lvl=info msg="Executing migration" logger=migrator id="add unique index dashboard_acl_dashboard_id_user_id"
+grafana_1                                   | t=2021-04-21T00:11:57+0000 lvl=info msg="Executing migration" logger=migrator id="add unique index dashboard_acl_dashboard_id_team_id"
+grafana_1                                   | t=2021-04-21T00:11:57+0000 lvl=info msg="Executing migration" logger=migrator id="save default acl rules in dashboard_acl table"
+grafana_1                                   | t=2021-04-21T00:11:57+0000 lvl=info msg="Executing migration" logger=migrator id="delete acl rules for deleted dashboards and folders"
+grafana_1                                   | t=2021-04-21T00:11:57+0000 lvl=info msg="Executing migration" logger=migrator id="create tag table"
+grafana_1                                   | t=2021-04-21T00:11:57+0000 lvl=info msg="Executing migration" logger=migrator id="add index tag.key_value"
+grafana_1                                   | t=2021-04-21T00:11:57+0000 lvl=info msg="Executing migration" logger=migrator id="create login attempt table"
+grafana_1                                   | t=2021-04-21T00:11:57+0000 lvl=info msg="Executing migration" logger=migrator id="add index login_attempt.username"
+grafana_1                                   | t=2021-04-21T00:11:57+0000 lvl=info msg="Executing migration" logger=migrator id="drop index IDX_login_attempt_username - v1"
+grafana_1                                   | t=2021-04-21T00:11:57+0000 lvl=info msg="Executing migration" logger=migrator id="Rename table login_attempt to login_attempt_tmp_qwerty - v1"
+techefx-eureka-namng-service_1              | 2021-04-21 00:11:58.058  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8761 (http)
+techefx-eureka-namng-service_1              | 2021-04-21 00:11:58.081  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+techefx-eureka-namng-service_1              | 2021-04-21 00:11:58.082  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+grafana_1                                   | t=2021-04-21T00:11:58+0000 lvl=info msg="Executing migration" logger=migrator id="create login_attempt v2"
+grafana_1                                   | t=2021-04-21T00:11:58+0000 lvl=info msg="Executing migration" logger=migrator id="create index IDX_login_attempt_username - v2"
+grafana_1                                   | t=2021-04-21T00:11:58+0000 lvl=info msg="Executing migration" logger=migrator id="copy login_attempt v1 to v2"
+techefx-eureka-namng-service_1              | 2021-04-21 00:11:58.264  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+techefx-eureka-namng-service_1              | 2021-04-21 00:11:58.265  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 13671 ms
+grafana_1                                   | t=2021-04-21T00:11:58+0000 lvl=info msg="Executing migration" logger=migrator id="drop login_attempt_tmp_qwerty"
+grafana_1                                   | t=2021-04-21T00:11:58+0000 lvl=info msg="Executing migration" logger=migrator id="create user auth table"
+techefx-product-enquiry-service_1           | 2021-04-21 00:11:58.385  WARN [techefx-product-enquiry-service,,,] 8 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+grafana_1                                   | t=2021-04-21T00:11:58+0000 lvl=info msg="Executing migration" logger=migrator id="create index IDX_user_auth_auth_module_auth_id - v1"
+grafana_1                                   | t=2021-04-21T00:11:58+0000 lvl=info msg="Executing migration" logger=migrator id="alter user_auth.auth_id to length 190"
+grafana_1                                   | t=2021-04-21T00:11:58+0000 lvl=info msg="Executing migration" logger=migrator id="Add OAuth access token to user_auth"
+grafana_1                                   | t=2021-04-21T00:11:58+0000 lvl=info msg="Executing migration" logger=migrator id="Add OAuth refresh token to user_auth"
+techefx-product-stock-service_1             | 2021-04-21 00:11:58.621  INFO [techefx-product-stock-service,,,] 7 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=35f00d5f-7a07-376e-904b-0baea2746a62
+grafana_1                                   | t=2021-04-21T00:11:58+0000 lvl=info msg="Executing migration" logger=migrator id="Add OAuth token type to user_auth"
+grafana_1                                   | t=2021-04-21T00:11:58+0000 lvl=info msg="Executing migration" logger=migrator id="Add OAuth expiry to user_auth"
+grafana_1                                   | t=2021-04-21T00:11:58+0000 lvl=info msg="Executing migration" logger=migrator id="Add index to user_id column in user_auth"
+grafana_1                                   | t=2021-04-21T00:11:58+0000 lvl=info msg="Executing migration" logger=migrator id="create server_lock table"
+grafana_1                                   | t=2021-04-21T00:11:58+0000 lvl=info msg="Executing migration" logger=migrator id="add index server_lock.operation_uid"
+grafana_1                                   | t=2021-04-21T00:11:58+0000 lvl=info msg="Executing migration" logger=migrator id="create user auth token table"
+grafana_1                                   | t=2021-04-21T00:11:59+0000 lvl=info msg="Executing migration" logger=migrator id="add unique index user_auth_token.auth_token"
+grafana_1                                   | t=2021-04-21T00:11:59+0000 lvl=info msg="Executing migration" logger=migrator id="add unique index user_auth_token.prev_auth_token"
+grafana_1                                   | t=2021-04-21T00:11:59+0000 lvl=info msg="Executing migration" logger=migrator id="add index user_auth_token.user_id"
+grafana_1                                   | t=2021-04-21T00:11:59+0000 lvl=info msg="Executing migration" logger=migrator id="create cache_data table"
+grafana_1                                   | t=2021-04-21T00:11:59+0000 lvl=info msg="Executing migration" logger=migrator id="add unique index cache_data.cache_key"
+grafana_1                                   | t=2021-04-21T00:11:59+0000 lvl=info msg="Executing migration" logger=migrator id="create short_url table v1"
+grafana_1                                   | t=2021-04-21T00:11:59+0000 lvl=info msg="Executing migration" logger=migrator id="add index short_url.org_id-uid"
+techefx-eureka-namng-service_1              | 2021-04-21 00:11:59.362  WARN [techefx-eureka-naming-server,,,] 8 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+techefx-eureka-namng-service_1              | 2021-04-21 00:11:59.362  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+techefx-eureka-namng-service_1              | 2021-04-21 00:11:59.402  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@74a6f9c1
+grafana_1                                   | t=2021-04-21T00:11:59+0000 lvl=info msg="Created default admin" logger=sqlstore user=admin
+grafana_1                                   | t=2021-04-21T00:11:59+0000 lvl=info msg="Created default organization" logger=sqlstore
+grafana_1                                   | t=2021-04-21T00:11:59+0000 lvl=info msg="Starting plugin search" logger=plugins
+grafana_1                                   | t=2021-04-21T00:11:59+0000 lvl=info msg="Registering plugin" logger=plugins id=input
+grafana_1                                   | t=2021-04-21T00:11:59+0000 lvl=info msg="HTTP Server Listen" logger=http.server address=[::]:3000 protocol=http subUrl= socket=
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:00.549  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=59164869-7bc7-3f44-a7ca-a106254d6013
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:01.739  WARN [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:02.901  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e90fd7a9-1cdc-3068-8d36-ce0d48ec0e8c
+techefx-product-stock-service_1             | 2021-04-21 00:12:03.011  INFO [techefx-product-stock-service,,,] 7 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8800 (http)
+techefx-product-stock-service_1             | 2021-04-21 00:12:03.058  INFO [techefx-product-stock-service,,,] 7 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+techefx-product-stock-service_1             | 2021-04-21 00:12:03.059  INFO [techefx-product-stock-service,,,] 7 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:03.302  WARN [techefx-eureka-naming-server,,,] 8 --- [           main] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [RestTemplateSender{http://localhost:9411/api/v2/spans}] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)}]
+techefx-product-stock-service_1             | 2021-04-21 00:12:03.313  INFO [techefx-product-stock-service,,,] 7 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+techefx-product-stock-service_1             | 2021-04-21 00:12:03.314  INFO [techefx-product-stock-service,,,] 7 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 14053 ms
+techefx-product-stock-service_1             | 2021-04-21 00:12:04.220  WARN [techefx-product-stock-service,,,] 7 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+techefx-product-stock-service_1             | 2021-04-21 00:12:04.220  INFO [techefx-product-stock-service,,,] 7 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+techefx-product-stock-service_1             | 2021-04-21 00:12:04.290  INFO [techefx-product-stock-service,,,] 7 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@75e91545
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:04.919  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:04.957  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:04.990  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:05.045  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8700 (http)
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:05.105  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:05.118  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:05.605  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:05.606  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 13435 ms
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:08.033  WARN [techefx-product-enquiry-service,,,] 8 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:08.034  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:08.182  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6f152006
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:08.330  WARN [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:08.331  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:08.350  WARN [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:08.353  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:08.633  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:09.142  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:09.156  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:09.178  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:09.936  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:09.952  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+techefx-product-stock-service_1             | 2021-04-21 00:12:12.928  INFO [techefx-product-stock-service,,,] 7 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:13.198  WARN [techefx-eureka-naming-server,,,] 8 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:13.209  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+techefx-product-stock-service_1             | 2021-04-21 00:12:13.220  INFO [techefx-product-stock-service,,,] 7 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+techefx-product-stock-service_1             | 2021-04-21 00:12:14.784  INFO [techefx-product-stock-service,,,] 7 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+techefx-product-stock-service_1             | 2021-04-21 00:12:15.321  INFO [techefx-product-stock-service,,,] 7 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:15.545  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [After]
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:15.546  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Before]
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:15.546  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Between]
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:15.546  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Cookie]
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:15.546  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Header]
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:15.556  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Host]
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:15.557  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Method]
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:15.557  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Path]
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:15.557  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Query]
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:15.557  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [ReadBody]
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:15.557  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [RemoteAddr]
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:15.558  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [Weight]
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:15.558  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] o.s.c.g.r.RouteDefinitionRouteLocator    : Loaded RoutePredicateFactory [CloudFoundryRouteService]
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:15.748  WARN [techefx-product-enquiry-service,,,] 8 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:15.748  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+techefx-product-stock-service_1             | 2021-04-21 00:12:15.834  WARN [techefx-product-stock-service,,,] 7 --- [           main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+techefx-product-stock-service_1             | 2021-04-21 00:12:15.835  INFO [techefx-product-stock-service,,,] 7 --- [           main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:15.925  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+techefx-product-stock-service_1             | 2021-04-21 00:12:16.318  INFO [techefx-product-stock-service,,,] 7 --- [         task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.23.Final
+techefx-product-stock-service_1             | 2021-04-21 00:12:16.851  WARN [techefx-product-stock-service,,,] 7 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+techefx-product-stock-service_1             | 2021-04-21 00:12:17.330  INFO [techefx-product-stock-service,,,] 7 --- [         task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:17.453  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:17.826  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 19 endpoint(s) beneath base path '/actuator'
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:18.840  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+techefx-product-stock-service_1             | 2021-04-21 00:12:18.955  INFO [techefx-product-stock-service,,,] 7 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:19.351  WARN [techefx-eureka-naming-server,,,] 8 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:20.205  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:20.458  WARN [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:20.605  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:20.740  WARN [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] eactorLoadBalancerClientRibbonWarnLogger : You have RibbonLoadBalancerClient on your classpath. LoadBalancerExchangeFilterFunction that uses it under the hood will be used by default. Spring Cloud Ribbon is now in maintenance mode, so we suggest switching to ReactorLoadBalancerExchangeFilterFunction instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:21.489  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:21.489  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:21.489  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:21.490  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:22.143  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:22.351  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:22.574  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:22.590  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:22.591  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:22.591  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:22.592  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:22.594  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:22.594  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:22.632  WARN [techefx-product-enquiry-service,,,] 8 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:23.415  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:23.977  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:24.328  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:24.498  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+techefx-eureka-namng-service_1              |   at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+techefx-eureka-namng-service_1              |   at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+techefx-eureka-namng-service_1              |   at com.sun.jersey.api.client.Client.handle(Client.java:652)
+techefx-eureka-namng-service_1              |   at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+techefx-eureka-namng-service_1              |   at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+techefx-eureka-namng-service_1              |   at com.sun.jersey.api.client.WebResource$Builder.get(WebResource.java:509)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplicationsInternal(AbstractJerseyEurekaHttpClient.java:196)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.getApplications(AbstractJerseyEurekaHttpClient.java:167)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:441)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:283)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:279)
+techefx-eureka-namng-service_1              |   at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:67)
+techefx-eureka-namng-service_1              |   at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:316)
+techefx-eureka-namng-service_1              |   at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+techefx-eureka-namng-service_1              |   at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+techefx-eureka-namng-service_1              |   at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+techefx-eureka-namng-service_1              |   at java.lang.reflect.Method.invoke(Method.java:498)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:363)
+techefx-eureka-namng-service_1              |   at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:389)
+techefx-eureka-namng-service_1              |   at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:186)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:360)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+techefx-eureka-namng-service_1              |   at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+techefx-eureka-namng-service_1              |   at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:192)
+techefx-eureka-namng-service_1              |   at com.sun.proxy.$Proxy102.getApplications(Unknown Source)
+techefx-eureka-namng-service_1              |   at org.springframework.cloud.netflix.eureka.server.EurekaServerAutoConfiguration.peerAwareInstanceRegistry(EurekaServerAutoConfiguration.java:154)
+techefx-eureka-namng-service_1              |   at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+techefx-eureka-namng-service_1              |   at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+techefx-eureka-namng-service_1              |   at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+techefx-eureka-namng-service_1              |   at java.lang.reflect.Method.invoke(Method.java:498)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:538)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+techefx-eureka-namng-service_1              |   at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+techefx-eureka-namng-service_1              |   at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+techefx-eureka-namng-service_1              |   at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+techefx-eureka-namng-service_1              |   at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+techefx-eureka-namng-service_1              |   at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+techefx-eureka-namng-service_1              |   at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+techefx-eureka-namng-service_1              |   at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+techefx-eureka-namng-service_1              |   at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+techefx-eureka-namng-service_1              |   at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+techefx-eureka-namng-service_1              |   at com.techefx.microservices.techefxeurekanamingserver.techefxeurekanamingserver.TechefxEurekaNamingServerApplication.main(TechefxEurekaNamingServerApplication.java:12)
+techefx-eureka-namng-service_1              |   at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+techefx-eureka-namng-service_1              |   at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+techefx-eureka-namng-service_1              |   at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+techefx-eureka-namng-service_1              |   at java.lang.reflect.Method.invoke(Method.java:498)
+techefx-eureka-namng-service_1              |   at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+techefx-eureka-namng-service_1              |   at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+techefx-eureka-namng-service_1              |   at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+techefx-eureka-namng-service_1              |   at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+techefx-eureka-namng-service_1              | Caused by: java.net.ConnectException: Connection refused (Connection refused)
+techefx-eureka-namng-service_1              |   at java.net.PlainSocketImpl.socketConnect(Native Method)
+techefx-eureka-namng-service_1              |   at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+techefx-eureka-namng-service_1              |   at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+techefx-eureka-namng-service_1              |   at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+techefx-eureka-namng-service_1              |   at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+techefx-eureka-namng-service_1              |   at java.net.Socket.connect(Socket.java:607)
+techefx-eureka-namng-service_1              |   at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+techefx-eureka-namng-service_1              |   at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+techefx-eureka-namng-service_1              |   at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+techefx-eureka-namng-service_1              |   at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+techefx-eureka-namng-service_1              |   at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+techefx-eureka-namng-service_1              |   at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+techefx-eureka-namng-service_1              |   at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+techefx-eureka-namng-service_1              |   at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+techefx-eureka-namng-service_1              |   at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+techefx-eureka-namng-service_1              |   at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+techefx-eureka-namng-service_1              |   ... 109 more
+techefx-eureka-namng-service_1              |
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:24.506  WARN [techefx-eureka-naming-server,,,] 8 --- [           main] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:24.519  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TECHEFX-EUREKA-NAMING-SERVER/ce32baa090a9:techefx-eureka-naming-server:8761 - was unable to refresh its cache! This periodic background refresh will be retried in 30 seconds. status = Cannot execute request on any known server stacktrace = com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$6.execute(EurekaHttpClientDecorator.java:137)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.getApplications(EurekaHttpClientDecorator.java:134)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry(DiscoveryClient.java:1101)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.DiscoveryClient.fetchRegistry(DiscoveryClient.java:1014)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:441)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:283)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.DiscoveryClient.<init>(DiscoveryClient.java:279)
+techefx-eureka-namng-service_1              |   at org.springframework.cloud.netflix.eureka.CloudEurekaClient.<init>(CloudEurekaClient.java:67)
+techefx-eureka-namng-service_1              |   at org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration.eurekaClient(EurekaClientAutoConfiguration.java:316)
+techefx-eureka-namng-service_1              |   at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+techefx-eureka-namng-service_1              |   at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+techefx-eureka-namng-service_1              |   at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+techefx-eureka-namng-service_1              |   at java.lang.reflect.Method.invoke(Method.java:498)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$1(AbstractBeanFactory.java:363)
+techefx-eureka-namng-service_1              |   at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.getBean(GenericScope.java:389)
+techefx-eureka-namng-service_1              |   at org.springframework.cloud.context.scope.GenericScope.get(GenericScope.java:186)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:360)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+techefx-eureka-namng-service_1              |   at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:35)
+techefx-eureka-namng-service_1              |   at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:192)
+techefx-eureka-namng-service_1              |   at com.sun.proxy.$Proxy102.getApplications(Unknown Source)
+techefx-eureka-namng-service_1              |   at org.springframework.cloud.netflix.eureka.server.EurekaServerAutoConfiguration.peerAwareInstanceRegistry(EurekaServerAutoConfiguration.java:154)
+techefx-eureka-namng-service_1              |   at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+techefx-eureka-namng-service_1              |   at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+techefx-eureka-namng-service_1              |   at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+techefx-eureka-namng-service_1              |   at java.lang.reflect.Method.invoke(Method.java:498)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:538)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+techefx-eureka-namng-service_1              |   at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+techefx-eureka-namng-service_1              |   at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+techefx-eureka-namng-service_1              |   at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+techefx-eureka-namng-service_1              |   at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+techefx-eureka-namng-service_1              |   at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+techefx-eureka-namng-service_1              |   at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+techefx-eureka-namng-service_1              |   at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+techefx-eureka-namng-service_1              |   at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+techefx-eureka-namng-service_1              |   at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+techefx-eureka-namng-service_1              |   at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+techefx-eureka-namng-service_1              |   at com.techefx.microservices.techefxeurekanamingserver.techefxeurekanamingserver.TechefxEurekaNamingServerApplication.main(TechefxEurekaNamingServerApplication.java:12)
+techefx-eureka-namng-service_1              |   at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+techefx-eureka-namng-service_1              |   at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+techefx-eureka-namng-service_1              |   at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+techefx-eureka-namng-service_1              |   at java.lang.reflect.Method.invoke(Method.java:498)
+techefx-eureka-namng-service_1              |   at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+techefx-eureka-namng-service_1              |   at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+techefx-eureka-namng-service_1              |   at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+techefx-eureka-namng-service_1              |   at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+techefx-eureka-namng-service_1              |
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:24.521  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : Initial registry fetch from primary servers failed
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:24.522  WARN [techefx-eureka-naming-server,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : Using default backup registry implementation which does not do anything.
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:24.524  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : Initial registry fetch from backup servers failed
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:24.536  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:24.549  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:24.550  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:24.562  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1618963944559 with initial instances count: 0
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:24.939  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:24.945  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:24.955  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:24.970  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:24.975  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:24.976  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:24.976  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:24.976  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:24.977  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:25.784  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:25.785  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:25.806  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:25.887  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:25.889  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:25.891  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:25.891  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+techefx-product-stock-service_1             | 2021-04-21 00:12:26.008  INFO [techefx-product-stock-service,,,] 7 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+techefx-product-stock-service_1             | 2021-04-21 00:12:26.044  INFO [techefx-product-stock-service,,,] 7 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+techefx-product-stock-service_1             | 2021-04-21 00:12:26.344  INFO [techefx-product-stock-service,,,] 7 --- [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+techefx-product-stock-service_1             | 2021-04-21 00:12:26.660  WARN [techefx-product-stock-service,,,] 7 --- [           main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:26.691  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:26.691  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:26.703  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:26.996  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TECHEFX-EUREKA-NAMING-SERVER with eureka with status UP
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:26.999  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1618963946999, current=UP, previous=STARTING]
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:27.046  INFO [techefx-eureka-naming-server,,,] 8 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TECHEFX-EUREKA-NAMING-SERVER/ce32baa090a9:techefx-eureka-naming-server:8761: registering service...
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:27.052  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:27.079  INFO [techefx-eureka-naming-server,,,] 8 --- [nfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:8761/eureka/}, exception=java.net.ConnectException: Connection refused (Connection refused) stacktrace=com.sun.jersey.api.client.ClientHandlerException: java.net.ConnectException: Connection refused (Connection refused)
+techefx-eureka-namng-service_1              |   at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+techefx-eureka-namng-service_1              |   at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+techefx-eureka-namng-service_1              |   at com.sun.jersey.api.client.Client.handle(Client.java:652)
+techefx-eureka-namng-service_1              |   at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+techefx-eureka-namng-service_1              |   at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+techefx-eureka-namng-service_1              |   at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:57)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+techefx-eureka-namng-service_1              |   at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+techefx-eureka-namng-service_1              |   at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+techefx-eureka-namng-service_1              |   at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+techefx-eureka-namng-service_1              |   at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+techefx-eureka-namng-service_1              |   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+techefx-eureka-namng-service_1              |   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+techefx-eureka-namng-service_1              |   at java.lang.Thread.run(Thread.java:748)
+techefx-eureka-namng-service_1              | Caused by: java.net.ConnectException: Connection refused (Connection refused)
+techefx-eureka-namng-service_1              |   at java.net.PlainSocketImpl.socketConnect(Native Method)
+techefx-eureka-namng-service_1              |   at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+techefx-eureka-namng-service_1              |   at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+techefx-eureka-namng-service_1              |   at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+techefx-eureka-namng-service_1              |   at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+techefx-eureka-namng-service_1              |   at java.net.Socket.connect(Socket.java:607)
+techefx-eureka-namng-service_1              |   at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:121)
+techefx-eureka-namng-service_1              |   at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:180)
+techefx-eureka-namng-service_1              |   at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:144)
+techefx-eureka-namng-service_1              |   at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:134)
+techefx-eureka-namng-service_1              |   at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:605)
+techefx-eureka-namng-service_1              |   at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:440)
+techefx-eureka-namng-service_1              |   at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+techefx-eureka-namng-service_1              |   at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+techefx-eureka-namng-service_1              |   at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+techefx-eureka-namng-service_1              |   at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+techefx-eureka-namng-service_1              |   ... 30 more
+techefx-eureka-namng-service_1              |
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:27.079  WARN [techefx-eureka-naming-server,,,] 8 --- [nfoReplicator-0] c.n.d.s.t.d.RetryableEurekaHttpClient    : Request execution failed with message: java.net.ConnectException: Connection refused (Connection refused)
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:27.086  WARN [techefx-eureka-naming-server,,,] 8 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TECHEFX-EUREKA-NAMING-SERVER/ce32baa090a9:techefx-eureka-naming-server:8761 - registration failed Cannot execute request on any known server
+techefx-eureka-namng-service_1              |
+techefx-eureka-namng-service_1              | com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.7.jar!/:1.10.7]
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.7.jar!/:1.10.7]
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.10.7.jar!/:1.10.7]
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.7.jar!/:1.10.7]
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.7.jar!/:1.10.7]
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876) ~[eureka-client-1.10.7.jar!/:1.10.7]
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) [eureka-client-1.10.7.jar!/:1.10.7]
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.10.7.jar!/:1.10.7]
+techefx-eureka-namng-service_1              |   at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at java.lang.Thread.run(Thread.java:748) [na:1.8.0_282]
+techefx-eureka-namng-service_1              |
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:27.087  WARN [techefx-eureka-naming-server,,,] 8 --- [nfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : There was a problem with the instance info replicator
+techefx-eureka-namng-service_1              |
+techefx-eureka-namng-service_1              | com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.7.jar!/:1.10.7]
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.7.jar!/:1.10.7]
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59) ~[eureka-client-1.10.7.jar!/:1.10.7]
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.7.jar!/:1.10.7]
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56) ~[eureka-client-1.10.7.jar!/:1.10.7]
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876) ~[eureka-client-1.10.7.jar!/:1.10.7]
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121) ~[eureka-client-1.10.7.jar!/:1.10.7]
+techefx-eureka-namng-service_1              |   at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101) [eureka-client-1.10.7.jar!/:1.10.7]
+techefx-eureka-namng-service_1              |   at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at java.lang.Thread.run(Thread.java:748) [na:1.8.0_282]
+techefx-eureka-namng-service_1              |
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:27.116  INFO [techefx-eureka-naming-server,,,] 8 --- [      Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:27.117  INFO [techefx-eureka-naming-server,,,] 8 --- [      Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:27.119  INFO [techefx-eureka-naming-server,,,] 8 --- [      Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:27.217  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:27.220  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:27.220  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:27.223  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:27.223  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:27.223  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:27.223  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:27.273  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8761 (http) with context path ''
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:27.282  INFO [techefx-eureka-naming-server,,,] 8 --- [      Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:27.285  INFO [techefx-eureka-naming-server,,,] 8 --- [      Thread-11] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:27.299  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:27.477  INFO [techefx-eureka-naming-server,,,] 8 --- [           main] t.t.TechefxEurekaNamingServerApplication : Started TechefxEurekaNamingServerApplication in 49.657 seconds (JVM running for 51.38)
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:27.878  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:27.996  INFO [techefx-eureka-naming-server,,,] 8 --- [nio-8761-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:27.997  INFO [techefx-eureka-naming-server,,,] 8 --- [nio-8761-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:27.999  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:28.000  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:28.000  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:28.000  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:28.000  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:28.001  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:28.002  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:28.103  INFO [techefx-eureka-naming-server,,,] 8 --- [nio-8761-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 105 ms
+techefx-product-stock-service_1             | 2021-04-21 00:12:28.257  INFO [techefx-product-stock-service,,,] 7 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoint(s) beneath base path '/actuator'
+techefx-product-stock-service_1             | 2021-04-21 00:12:28.514  INFO [techefx-product-stock-service,,,] 7 --- [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:28.651  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:28.657  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:28.670  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:28.686  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1618963948684 with initial instances count: 0
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:28.709  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:28.725  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TECHEFX-SPRING-CLOUD-API-GATEWAY-SERVICE with eureka with status UP
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:28.729  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1618963948729, current=UP, previous=STARTING]
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:28.739  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:28.755  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:28.773  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1618963948771 with initial instances count: 0
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:28.805  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TECHEFX-PRODUCT-ENQUIRY-SERVICE with eureka with status UP
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:28.837  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TECHEFX-SPRING-CLOUD-API-GATEWAY-SERVICE/c8d1caf1c1ed:techefx-spring-cloud-api-gateway-service:8900: registering service...
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:28.846  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1618963948846, current=UP, previous=STARTING]
+techefx-product-stock-service_1             | 2021-04-21 00:12:28.930  INFO [techefx-product-stock-service,,,] 7 --- [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:28.886  INFO [techefx-product-enquiry-service,,,] 8 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TECHEFX-PRODUCT-ENQUIRY-SERVICE/89a22bd3a788:techefx-product-enquiry-service:8700: registering service...
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:29.177  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8700 (http) with context path ''
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:29.200  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8700
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:29.477  INFO [techefx-product-enquiry-service,,,] 8 --- [           main] .TechefxProductEnquiryServiceApplication : Started TechefxProductEnquiryServiceApplication in 45.296 seconds (JVM running for 48.913)
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:29.589  WARN [techefx-eureka-naming-server,,,] 8 --- [/api/v2/spans}}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:29.590  WARN [techefx-eureka-naming-server,,,] 8 --- [/api/v2/spans}}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 2 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused))
+techefx-eureka-namng-service_1              |
+techefx-eureka-namng-service_1              | org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+techefx-eureka-namng-service_1              |   at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:746) ~[spring-web-5.2.11.RELEASE.jar!/:5.2.11.RELEASE]
+techefx-eureka-namng-service_1              |   at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.6.RELEASE.jar!/:2.2.6.RELEASE]
+techefx-eureka-namng-service_1              |   at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:639) ~[spring-web-5.2.11.RELEASE.jar!/:5.2.11.RELEASE]
+techefx-eureka-namng-service_1              |   at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.6.RELEASE.jar!/:2.2.6.RELEASE]
+techefx-eureka-namng-service_1              |   at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:147) ~[spring-cloud-sleuth-zipkin-2.2.6.RELEASE.jar!/:2.2.6.RELEASE]
+techefx-eureka-namng-service_1              |   at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:137) ~[spring-cloud-sleuth-zipkin-2.2.6.RELEASE.jar!/:2.2.6.RELEASE]
+techefx-eureka-namng-service_1              |   at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.21.7.jar!/:na]
+techefx-eureka-namng-service_1              |   at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299) ~[zipkin-reporter-2.15.2.jar!/:na]
+techefx-eureka-namng-service_1              |   at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378) [zipkin-reporter-2.15.2.jar!/:na]
+techefx-eureka-namng-service_1              |   at java.lang.Thread.run(Thread.java:748) [na:1.8.0_282]
+techefx-eureka-namng-service_1              | Caused by: java.net.ConnectException: Connection refused (Connection refused)
+techefx-eureka-namng-service_1              |   at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at java.net.Socket.connect(Socket.java:607) ~[na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1226) ~[na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162) ~[na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056) ~[na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990) ~[na:1.8.0_282]
+techefx-eureka-namng-service_1              |   at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.2.11.RELEASE.jar!/:5.2.11.RELEASE]
+techefx-eureka-namng-service_1              |   at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.11.RELEASE.jar!/:5.2.11.RELEASE]
+techefx-eureka-namng-service_1              |   at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.11.RELEASE.jar!/:5.2.11.RELEASE]
+techefx-eureka-namng-service_1              |   at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:737) ~[spring-web-5.2.11.RELEASE.jar!/:5.2.11.RELEASE]
+techefx-eureka-namng-service_1              |   ... 9 common frames omitted
+techefx-eureka-namng-service_1              |
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:29.914  INFO [techefx-eureka-naming-server,5a6d203069e80f7e,5a6d203069e80f7e,true] 8 --- [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance TECHEFX-SPRING-CLOUD-API-GATEWAY-SERVICE/c8d1caf1c1ed:techefx-spring-cloud-api-gateway-service:8900 with status UP (replication=false)
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:29.937  INFO [techefx-eureka-naming-server,c5eb986852147df3,c5eb986852147df3,true] 8 --- [nio-8761-exec-3] c.n.e.registry.AbstractInstanceRegistry  : Registered instance TECHEFX-PRODUCT-ENQUIRY-SERVICE/89a22bd3a788:techefx-product-enquiry-service:8700 with status UP (replication=false)
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:29.941  INFO [techefx-product-enquiry-service,,,] 8 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TECHEFX-PRODUCT-ENQUIRY-SERVICE/89a22bd3a788:techefx-product-enquiry-service:8700 - registration status: 204
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:30.012  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TECHEFX-SPRING-CLOUD-API-GATEWAY-SERVICE/c8d1caf1c1ed:techefx-spring-cloud-api-gateway-service:8900 - registration status: 204
+techefx-product-stock-service_1             | 2021-04-21 00:12:30.209  INFO [techefx-product-stock-service,,,] 7 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+techefx-product-stock-service_1             | 2021-04-21 00:12:30.216  INFO [techefx-product-stock-service,,,] 7 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:30.744  INFO [techefx-eureka-naming-server,1fc63a90e2e77533,1fc63a90e2e77533,true] 8 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance TECHEFX-SPRING-CLOUD-API-GATEWAY-SERVICE/c8d1caf1c1ed:techefx-spring-cloud-api-gateway-service:8900 with status UP (replication=true)
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:30.776  INFO [techefx-eureka-naming-server,1fc63a90e2e77533,1fc63a90e2e77533,true] 8 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : Registered instance TECHEFX-PRODUCT-ENQUIRY-SERVICE/89a22bd3a788:techefx-product-enquiry-service:8700 with status UP (replication=true)
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:30.949  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] o.s.b.web.embedded.netty.NettyWebServer  : Netty started on port(s): 8900
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:30.954  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8900
+techefx-product-stock-service_1             | 2021-04-21 00:12:31.028  INFO [techefx-product-stock-service,,,] 7 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+techefx-product-stock-service_1             | 2021-04-21 00:12:31.028  INFO [techefx-product-stock-service,,,] 7 --- [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:31.958  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [           main] xSpringCloudApiGatewayServiceApplication : Started TechefxSpringCloudApiGatewayServiceApplication in 43.893 seconds (JVM running for 48.478)
+techefx-product-stock-service_1             | 2021-04-21 00:12:32.315  INFO [techefx-product-stock-service,,,] 7 --- [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+techefx-product-stock-service_1             | 2021-04-21 00:12:32.427  INFO [techefx-product-stock-service,,,] 7 --- [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+techefx-product-stock-service_1             | 2021-04-21 00:12:32.428  INFO [techefx-product-stock-service,,,] 7 --- [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+techefx-product-stock-service_1             | 2021-04-21 00:12:32.446  INFO [techefx-product-stock-service,,,] 7 --- [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+techefx-product-stock-service_1             | 2021-04-21 00:12:32.446  INFO [techefx-product-stock-service,,,] 7 --- [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+techefx-product-stock-service_1             | 2021-04-21 00:12:32.447  INFO [techefx-product-stock-service,,,] 7 --- [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+techefx-product-stock-service_1             | 2021-04-21 00:12:32.447  INFO [techefx-product-stock-service,,,] 7 --- [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+techefx-product-stock-service_1             | 2021-04-21 00:12:32.447  INFO [techefx-product-stock-service,,,] 7 --- [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:32.892  INFO [techefx-product-enquiry-service,,,] 8 --- [nio-8700-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:32.893  INFO [techefx-product-enquiry-service,,,] 8 --- [nio-8700-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:32.965  INFO [techefx-product-enquiry-service,,,] 8 --- [nio-8700-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 72 ms
+techefx-product-stock-service_1             | 2021-04-21 00:12:33.149  INFO [techefx-product-stock-service,,,] 7 --- [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+techefx-product-stock-service_1             | 2021-04-21 00:12:33.166  INFO [techefx-product-stock-service,,,] 7 --- [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+techefx-product-stock-service_1             | 2021-04-21 00:12:33.179  INFO [techefx-product-stock-service,,,] 7 --- [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+techefx-product-stock-service_1             | 2021-04-21 00:12:33.196  INFO [techefx-product-stock-service,,,] 7 --- [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1618963953194 with initial instances count: 2
+techefx-product-stock-service_1             | 2021-04-21 00:12:33.233  INFO [techefx-product-stock-service,,,] 7 --- [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TECHEFX-PRODUCT-STOCK-SERVICE with eureka with status UP
+techefx-product-stock-service_1             | 2021-04-21 00:12:33.235  INFO [techefx-product-stock-service,,,] 7 --- [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1618963953235, current=UP, previous=STARTING]
+techefx-product-stock-service_1             | 2021-04-21 00:12:33.241  INFO [techefx-product-stock-service,,,] 7 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TECHEFX-PRODUCT-STOCK-SERVICE/6560dd32e5af:techefx-product-stock-service:8800: registering service...
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:33.316  INFO [techefx-eureka-naming-server,8a1b9d760bc48cc6,8a1b9d760bc48cc6,true] 8 --- [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance TECHEFX-PRODUCT-STOCK-SERVICE/6560dd32e5af:techefx-product-stock-service:8800 with status UP (replication=false)
+techefx-product-stock-service_1             | 2021-04-21 00:12:33.320  INFO [techefx-product-stock-service,,,] 7 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TECHEFX-PRODUCT-STOCK-SERVICE/6560dd32e5af:techefx-product-stock-service:8800 - registration status: 204
+techefx-product-stock-service_1             | 2021-04-21 00:12:33.361  INFO [techefx-product-stock-service,,,] 7 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8800 (http) with context path ''
+techefx-product-stock-service_1             | 2021-04-21 00:12:33.363  INFO [techefx-product-stock-service,,,] 7 --- [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8800
+techefx-product-stock-service_1             | 2021-04-21 00:12:33.370  INFO [techefx-product-stock-service,,,] 7 --- [           main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories▒
+techefx-product-stock-service_1             | 2021-04-21 00:12:33.648  INFO [techefx-product-stock-service,,,] 7 --- [nio-8800-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+techefx-product-stock-service_1             | 2021-04-21 00:12:33.649  INFO [techefx-product-stock-service,,,] 7 --- [nio-8800-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+techefx-product-stock-service_1             | 2021-04-21 00:12:33.693  INFO [techefx-product-stock-service,,,] 7 --- [nio-8800-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 42 ms
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:33.843  INFO [techefx-eureka-naming-server,a2cbc821aa238f10,a2cbc821aa238f10,true] 8 --- [nio-8761-exec-9] c.n.e.registry.AbstractInstanceRegistry  : Registered instance TECHEFX-PRODUCT-STOCK-SERVICE/6560dd32e5af:techefx-product-stock-service:8800 with status UP (replication=true)
+techefx-product-stock-service_1             | 2021-04-21 00:12:34.317  INFO [techefx-product-stock-service,,,] 7 --- [           main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+techefx-product-stock-service_1             | 2021-04-21 00:12:34.359  INFO [techefx-product-stock-service,,,] 7 --- [           main] .t.TechefxProductStockServiceApplication : Started TechefxProductStockServiceApplication in 53.441 seconds (JVM running for 56.01)
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:54.537  INFO [techefx-eureka-naming-server,,,] 8 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:54.538  INFO [techefx-eureka-naming-server,,,] 8 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:54.538  INFO [techefx-eureka-naming-server,,,] 8 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:54.538  INFO [techefx-eureka-naming-server,,,] 8 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:54.538  INFO [techefx-eureka-naming-server,,,] 8 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:54.539  INFO [techefx-eureka-naming-server,,,] 8 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:54.539  INFO [techefx-eureka-naming-server,,,] 8 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:54.562  INFO [techefx-eureka-naming-server,,,] 8 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:54.570  WARN [techefx-eureka-naming-server,5a6fdc630303d5ad,5a6fdc630303d5ad,false] 8 --- [nio-8761-exec-5] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: TECHEFX-EUREKA-NAMING-SERVER - ce32baa090a9:techefx-eureka-naming-server:8761
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:54.570  WARN [techefx-eureka-naming-server,5a6fdc630303d5ad,5a6fdc630303d5ad,false] 8 --- [nio-8761-exec-5] c.n.eureka.resources.InstanceResource    : Not Found (Renew): TECHEFX-EUREKA-NAMING-SERVER - ce32baa090a9:techefx-eureka-naming-server:8761
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:54.574  INFO [techefx-eureka-naming-server,,,] 8 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TECHEFX-EUREKA-NAMING-SERVER/ce32baa090a9:techefx-eureka-naming-server:8761 - Re-registering apps/TECHEFX-EUREKA-NAMING-SERVER
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:54.574  INFO [techefx-eureka-naming-server,,,] 8 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TECHEFX-EUREKA-NAMING-SERVER/ce32baa090a9:techefx-eureka-naming-server:8761: registering service...
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:54.583  INFO [techefx-eureka-naming-server,c95282e86cc11278,c95282e86cc11278,false] 8 --- [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance TECHEFX-EUREKA-NAMING-SERVER/ce32baa090a9:techefx-eureka-naming-server:8761 with status UP (replication=false)
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:54.586  INFO [techefx-eureka-naming-server,,,] 8 --- [tbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TECHEFX-EUREKA-NAMING-SERVER/ce32baa090a9:techefx-eureka-naming-server:8761 - registration status: 204
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:55.100  INFO [techefx-eureka-naming-server,32fd7be214b997a0,32fd7be214b997a0,true] 8 --- [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance TECHEFX-EUREKA-NAMING-SERVER/ce32baa090a9:techefx-eureka-naming-server:8761 with status UP (replication=true)
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:57.297  INFO [techefx-eureka-naming-server,,,] 8 --- [      Thread-11] c.n.e.registry.AbstractInstanceRegistry  : Registered instance TECHEFX-PRODUCT-ENQUIRY-SERVICE/89a22bd3a788:techefx-product-enquiry-service:8700 with status UP (replication=true)
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:57.298  INFO [techefx-eureka-naming-server,,,] 8 --- [      Thread-11] c.n.e.registry.AbstractInstanceRegistry  : Registered instance TECHEFX-SPRING-CLOUD-API-GATEWAY-SERVICE/c8d1caf1c1ed:techefx-spring-cloud-api-gateway-service:8900 with status UP (replication=true)
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:57.298  INFO [techefx-eureka-naming-server,,,] 8 --- [      Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 2 instances from neighboring DS node
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:57.298  INFO [techefx-eureka-naming-server,,,] 8 --- [      Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 3
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:57.299  INFO [techefx-eureka-naming-server,,,] 8 --- [      Thread-11] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+techefx-eureka-namng-service_1              | 2021-04-21 00:12:57.317  INFO [techefx-eureka-naming-server,,,] 8 --- [      Thread-11] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:58.659  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:58.659  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:58.659  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:58.659  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:58.659  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:58.659  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:58.659  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:58.724  INFO [techefx-product-enquiry-service,,,] 8 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:58.724  INFO [techefx-product-enquiry-service,,,] 8 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:58.725  INFO [techefx-product-enquiry-service,,,] 8 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:58.725  INFO [techefx-product-enquiry-service,,,] 8 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application is null : false
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:58.725  INFO [techefx-product-enquiry-service,,,] 8 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:58.725  INFO [techefx-product-enquiry-service,,,] 8 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:58.725  INFO [techefx-product-enquiry-service,,,] 8 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:12:58.822  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+techefx-product-enquiry-service_1           | 2021-04-21 00:12:59.332  INFO [techefx-product-enquiry-service,,,] 8 --- [freshExecutor-0] com.netflix.discovery.DiscoveryClient    : The response status is 200
+techefx-eureka-namng-service_1              | 2021-04-21 00:13:57.300  INFO [techefx-eureka-naming-server,,,] 8 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+techefx-eureka-namng-service_1              | 2021-04-21 00:14:57.300  INFO [techefx-eureka-naming-server,,,] 8 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+techefx-eureka-namng-service_1              | 2021-04-21 00:15:57.300  INFO [techefx-eureka-naming-server,,,] 8 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+techefx-eureka-namng-service_1              | 2021-04-21 00:16:57.300  INFO [techefx-eureka-naming-server,,,] 8 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+techefx-product-enquiry-service_1           | 2021-04-21 00:17:12.556  INFO [techefx-product-enquiry-service,1c92e8e414e3a22f,1c92e8e414e3a22f,true] 8 --- [nio-8700-exec-8] c.netflix.config.ChainedDynamicProperty  : Flipping property: techefx-product-stock-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+techefx-product-enquiry-service_1           | 2021-04-21 00:17:12.647  INFO [techefx-product-enquiry-service,1c92e8e414e3a22f,1c92e8e414e3a22f,true] 8 --- [nio-8700-exec-8] c.n.u.concurrent.ShutdownEnabledTimer    : Shutdown hook installed for: NFLoadBalancer-PingTimer-techefx-product-stock-service
+techefx-product-enquiry-service_1           | 2021-04-21 00:17:12.648  INFO [techefx-product-enquiry-service,1c92e8e414e3a22f,1c92e8e414e3a22f,true] 8 --- [nio-8700-exec-8] c.netflix.loadbalancer.BaseLoadBalancer  : Client: techefx-product-stock-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=techefx-product-stock-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+techefx-product-enquiry-service_1           | 2021-04-21 00:17:12.678  INFO [techefx-product-enquiry-service,1c92e8e414e3a22f,1c92e8e414e3a22f,true] 8 --- [nio-8700-exec-8] c.n.l.DynamicServerListLoadBalancer      : Using serverListUpdater PollingServerListUpdater
+techefx-product-enquiry-service_1           | 2021-04-21 00:17:12.760  INFO [techefx-product-enquiry-service,1c92e8e414e3a22f,1c92e8e414e3a22f,true] 8 --- [nio-8700-exec-8] c.netflix.config.ChainedDynamicProperty  : Flipping property: techefx-product-stock-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+techefx-product-enquiry-service_1           | 2021-04-21 00:17:12.764  INFO [techefx-product-enquiry-service,1c92e8e414e3a22f,1c92e8e414e3a22f,true] 8 --- [nio-8700-exec-8] c.n.l.DynamicServerListLoadBalancer      : DynamicServerListLoadBalancer for client techefx-product-stock-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=techefx-product-stock-service,current list of Servers=[6560dd32e5af:8800],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;        Instance count:1;       Active connections count: 0;    Circuit breaker tripped count: 0;       Active connections per server: 0.0;]
+techefx-product-enquiry-service_1           | },Server stats: [[Server:6560dd32e5af:8800;       Zone:defaultZone;       Total Requests:0;       Successive connection failure:0;        Total blackout seconds:0;   Last connection made:Thu Jan 01 00:00:00 GMT 1970;      First connection made: Thu Jan 01 00:00:00 GMT 1970;    Active Connections:0;   total failure count in last (1000) msecs:0;     average resp time:0.0;      90 percentile resp time:0.0;    95 percentile resp time:0.0;    min resp time:0.0;      max resp time:0.0;      stddev resp time:0.0]
+techefx-product-enquiry-service_1           | ]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@754e3dc1
+techefx-product-enquiry-service_1           | 2021-04-21 00:17:13.684  INFO [techefx-product-enquiry-service,,,] 8 --- [erListUpdater-0] c.netflix.config.ChainedDynamicProperty  : Flipping property: techefx-product-stock-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+techefx-eureka-namng-service_1              | 2021-04-21 00:17:22.609  INFO [techefx-eureka-naming-server,,,] 8 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+techefx-spring-cloud-api-gateway-service_1  | 2021-04-21 00:17:27.269  INFO [techefx-spring-cloud-api-gateway-service,,,] 7 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+techefx-product-enquiry-service_1           | 2021-04-21 00:17:28.011  INFO [techefx-product-enquiry-service,,,] 8 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+techefx-product-stock-service_1             | 2021-04-21 00:17:32.454  INFO [techefx-product-stock-service,,,] 7 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+techefx-eureka-namng-service_1              | 2021-04-21 00:17:57.301  INFO [techefx-eureka-naming-server,,,] 8 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+techefx-eureka-namng-service_1              | 2021-04-21 00:18:57.301  INFO [techefx-eureka-naming-server,,,] 8 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+techefx-eureka-namng-service_1              | 2021-04-21 00:19:57.301  INFO [techefx-eureka-naming-server,,,] 8 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+techefx-eureka-namng-service_1              | 2021-04-21 00:20:57.301  INFO [techefx-eureka-naming-server,,,] 8 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+grafana_1                                   | t=2021-04-21T00:21:48+0000 lvl=info msg="Shutdown started" logger=server reason="System signal: terminated"
+techefx-docker-compose-workspace_grafana_1 exited with code 0
+prometheus_1                                | level=warn ts=2021-04-21T00:21:48.898Z caller=main.go:629 msg="Received SIGTERM, exiting gracefully..."
+prometheus_1                                | level=info ts=2021-04-21T00:21:48.899Z caller=main.go:652 msg="Stopping scrape discovery manager..."
+prometheus_1                                | level=info ts=2021-04-21T00:21:48.899Z caller=main.go:666 msg="Stopping notify discovery manager..."
+prometheus_1                                | level=info ts=2021-04-21T00:21:48.899Z caller=main.go:688 msg="Stopping scrape manager..."
+prometheus_1                                | level=info ts=2021-04-21T00:21:48.899Z caller=main.go:648 msg="Scrape discovery manager stopped"
+prometheus_1                                | level=info ts=2021-04-21T00:21:48.899Z caller=main.go:662 msg="Notify discovery manager stopped"
+prometheus_1                                | level=info ts=2021-04-21T00:21:48.899Z caller=manager.go:924 component="rule manager" msg="Stopping rule manager..."
+prometheus_1                                | level=info ts=2021-04-21T00:21:48.900Z caller=manager.go:934 component="rule manager" msg="Rule manager stopped"
+prometheus_1                                | level=info ts=2021-04-21T00:21:48.900Z caller=main.go:682 msg="Scrape manager stopped"
+prometheus_1                                | level=info ts=2021-04-21T00:21:48.910Z caller=notifier.go:601 component=notifier msg="Stopping notification manager..."
+prometheus_1                                | level=info ts=2021-04-21T00:21:48.910Z caller=main.go:856 msg="Notifier manager stopped"
+prometheus_1                                | level=info ts=2021-04-21T00:21:48.910Z caller=main.go:868 msg="See you next time!"
+techefx-docker-compose-workspace_prometheus_1 exited with code 0
+techefx-docker-compose-workspace_zipkin_1 exited with code 143
+techefx-eureka-namng-service_1              | 2021-04-21 00:21:57.301  INFO [techefx-eureka-naming-server,,,] 8 --- [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+techefx-docker-compose-workspace_techefx-spring-cloud-api-gateway-service_1 exited with code 137
+techefx-docker-compose-workspace_techefx-product-enquiry-service_1 exited with code 137
+techefx-docker-compose-workspace_techefx-product-stock-service_1 exited with code 137
+techefx-eureka-namng-service_1              | 2021-04-21 00:22:22.610  INFO [techefx-eureka-naming-server,,,] 8 --- [trap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+techefx-docker-compose-workspace_techefx-eureka-namng-service_1 exited with code 137
+
+Jaca@DESKTOP-G102BV9 MINGW64 /e/000/techefx-services/techefx-docker-compose-workspace (master)
+$
